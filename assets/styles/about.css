@@ -39,9 +39,26 @@ a {
     font-family: 'Tenor Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 48px;
+    font-size: 2.7em;
     line-height: 150%;
     color: #57463A;
+}
+
+button {
+    border: none;
+    background: #A1B29F;
+    font-weight: 700;
+    font-size: 0.9em;
+    text-align: center;
+    color: #F6F6F6;
+    padding: 18px 51px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background: #678064;
+    cursor: pointer;
+    border: none;
 }
 
 /*---------------Header---------------*/
@@ -70,6 +87,10 @@ a {
     padding-right: 3vw;
 }
 
+.header__nav-left {
+    display: flex;
+}
+
 .header__nav-right {
     display: flex;
     justify-content: end;
@@ -85,6 +106,10 @@ a {
     margin-left: 5vw;
     font-size: 0.9em;
     color: #323232;
+}
+
+.header__link-left:hover, .header__link-right:hover {
+    text-decoration: underline;
 }
 
 .hamburger__icon {
@@ -117,10 +142,178 @@ a {
     margin-bottom: 4vh;
 }
 
+/*---------------About-figures---------------*/
+
+.about-figures__container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 12vh;
+}
+
+.about-figures__title {
+    margin-bottom: 0;
+}
+
+.about-figures__text {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+/*---------------About-founder---------------*/
+
+.about-founder__container {
+    display: flex;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+
+.about-founder__content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3vw;
+}
+
+.about-founder__title_founder {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.about-founder__subtitle, .about-founder__text {
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+.about-founder__subtitle {
+    margin-bottom: 10vh;
+}
+
+.about-founder__text {
+    margin-top: 0;
+    margin-bottom: 3vh;
+}
+
+/*---------------About-philosophy---------------*/
+
+.about-philosophy__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-philosophy__title {
+    margin-bottom: 10vh;
+}
+
+.about-philosophy__text {
+    text-align: end;
+    margin-top: 0;
+    line-height: 50%;
+    font-size: 1.5em;
+}
+
+/*---------------About-media---------------*/
+
+.about-media__container {
+    margin-top: 15vh;
+}
+
+.about-media__title {
+    margin-bottom: 0;
+}
+
+.about-media__text {
+    margin-bottom: 3vh;
+}
+
+.about-media__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+
+.about-media__img {
+    width: 200px; 
+    padding-left: 1vw;
+    padding-right: 1vw;
+    transition: width 0.5s ease;
+}
+
+.about-media__img:hover { 
+    width: 50vh; 
+    cursor: pointer
+}
+
+/*---------------About-contact---------------*/
+
+.about-contact__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-contact__button {
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 20vh;
+    border: none;
+}
+
+/*---------------Footer---------------*/
+
+.footer {
+    background: #715B4B;
+    min-height: 40vh;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10vh;
+}
+
+.footer__text {
+    margin: 0;
+    font-size: 0.9em;
+    color: #F6F6F6;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__link {
+    font-size: 0.9em;
+    color: #F6F6F6;
+}
+
+.footer__socials {
+    display: flex;
+}
+
+.footer__social {
+    margin-left: 1.5vw;
+}
 
 
 
-@media screen and (max-width: 391px){
+/*---------------Медиазапросы---------------*/
+
+@media screen and (max-width: 414px){
+
+    .header {
+        border: none;
+    }
+
+    .header__container {
+        display: none;
+    }
+
     .hamburger__icon {
         display: block;
     } 
