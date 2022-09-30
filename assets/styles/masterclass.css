@@ -1,15 +1,235 @@
-:root {
---bg-color: #F6F6F6;
+html, body {
+    height: 100%;
 }
 
-
-main img {background: rgb(241,241,241);
-background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 150%;
+    color: #000000;
+    background: #f3efea;
 }
 
-/* majid-gheidarlou-LuI6euS7Dno-unsplash 1 */
-position: absolute;
-width: 1440px;
-height: 601px;
-left: 0px;
-top: 137px;
+.wrapper {
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+[class*="__container"]{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;    
+}
+
+a {
+    text-decoration: none;
+}
+
+[class*="__title"] {
+    font-family: 'Tenor Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.7em;
+    line-height: 150%;
+    color: #57463A;
+}
+
+button {
+    border: none;
+    background: #A1B29F;
+    font-weight: 700;
+    font-size: 0.9em;
+    text-align: center;
+    color: #F6F6F6;
+    padding: 18px 51px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background: #678064;
+    cursor: pointer;
+    border: none;
+}
+
+/*---------------Header---------------*/
+
+.header {
+    min-width: 15vh;
+    border-bottom: 1px solid #000000;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.header__nav-left, .header__nav-right {
+    width: 45vw;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.header__nav-left {
+    display: flex;
+}
+
+.header__nav-right {
+    display: flex;
+    justify-content: end;
+}
+
+.header__link-left {
+    margin-right: 5vw;
+    font-size: 0.9em;
+    color: #323232;
+}
+
+.header__link-right {
+    margin-left: 5vw;
+    font-size: 0.9em;
+    color: #323232;
+}
+
+.header__link-left:hover, .header__link-right:hover {
+    text-decoration: underline;
+}
+
+.hamburger__icon {
+    display: none;
+}
+
+/*---------------Masterclass-main---------------*/
+
+.masterclass-main {
+    justify-content: center;
+    align-items: center;
+    height: 601px;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 58.25%, rgba(0, 0, 0, 0) 100%), url(/assets/images/masterclass/masterclass_main.png);
+    background-size: cover;
+}
+.masterclass-main__title {
+    padding-top: 2rem;
+    align-self: flex-end;
+    color: #F6F6F6;
+}
+.masterclass-main__button {
+    color: #4C6D77;
+    background: #F6F6F6;
+}
+.masterclass-main__button:hover {
+    color: #4C6D77;
+    background: #b3b3b3;
+}
+/*---------------Masterclass-main---------------*/
+.masterclass-ourworks {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 132px repeat(2, 300px 60px) 91px;
+}
+.masterclass-ourworks__title {
+    grid-area: 1/1/2/5;
+}
+.masterclass-ourworks__img {
+    grid-area: 1/2/2/3;
+    object-fit: cover;
+}
+.masterclass-ourworks__button {
+    grid-area: 6/2/7/4;
+}
+
+/*---------------Masterclass-secondlife---------------*/
+.masterclass-secondlife {
+    align-items: center;
+    width: 100%;
+    height: 404px;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(/assets/images/masterclass/masterclass_secondlife.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.masterclass-secondlife__text {
+    font-family: 'Tenor Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.7em;
+    line-height: 150%;
+    color: #F6F6F6;
+    text-align: center;
+}
+
+/*---------------Masterclass-joinery---------------*/
+.masterclass-joinery__container {
+    width: 100vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 90% 10%;
+    justify-items: center;
+}
+.masterclass-joinery__img {
+    height: 100%;
+    grid-row: 1/2;
+}
+.masterclass-joinery__capture {
+    grid-row: 2/3;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+}
+/*---------------Footer---------------*/
+
+.footer {
+    background: #715B4B;
+    min-height: 40vh;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10vh;
+}
+
+.footer__text {
+    margin: 0;
+    font-size: 0.9em;
+    color: #F6F6F6;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__link {
+    font-size: 0.9em;
+    color: #F6F6F6;
+}
+
+.footer__socials {
+    display: flex;
+}
+
+.footer__social {
+    margin-left: 1.5vw;
+}

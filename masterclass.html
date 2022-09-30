@@ -4,156 +4,220 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/normalize.css">
-    <link rel="stylesheet" href="assets/styles/masterclass.css">
-    <link rel="shortcut icon" href="assets/images/icon.svg" type="image/svg">
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/masterclass.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/icon.svg" type="image/svg">
     <title>Мастер-классы</title>
 </head>
 <body>
-    <header></header>
-    <main>
-        <img src="assets/images/masterclass/masterclass_main.png" alt="planking">
-        <h1>Нам доверяют мебель с историей в 120 лет</h1>
-        <button><a href="#header_masreclass">Смотреть мастер-классы</a></button>
-    </main>
-    <section>
-        <h2>Наши работы</h2>
-        <div> 
-            <img src="./assets/images/masterclass/masterclass_ourworks_11.png" alt="before">
-            <p>До</p>
-        </div>
-        <div>
-            <img src="./assets/images/masterclass/masterclass_ourworks_12.png" alt="after">
-            <p>После</p>
-        </div>
-        <div> 
-            <img src="./assets/images/masterclass/masterclass_ourworks_21.png" alt="before">
-            <p>До</p>
-        </div>
-        <div>
-            <img src="./assets/images/masterclass/masterclass_ourworks_22.png" alt="after">
-            <p>После</p>
-        </div>
-        <div> 
-            <img src="./assets/images/masterclass/masterclass_ourworks_31.png" alt="before">
-            <p>До</p>
-        </div>
-        <div>
-            <img src="./assets/images/masterclass/masterclass_ourworks_32.png" alt="after">
-            <p>После</p>
-        </div>
-        <div> 
-            <img src="./assets/images/masterclass/masterclass_ourworks_41.png" alt="before">
-            <p>До</p>
-        </div>
-        <div>
-            <img src="./assets/images/masterclass/masterclass_ourworks_42.png" alt="after">
-            <p>После</p>
-        </div>
-        <button>Смотреть больше примеров</button>
-        <div hidden>
-            <img src="./assets/images/masterclass/masterclass_ourworks_51.png" alt="before">
-            <p>До</p>
-        </div>
-        <div hidden>
-            <img src="./assets/images/masterclass/masterclass_ourworks_52.png" alt="after">
-            <p>После</p>
-        </div>
-        <div hidden>
-            <img src="./assets/images/masterclass/masterclass_ourworks_61.png" alt="before">
-            <p>До</p>
-        </div>
-        <div hidden>
-            <img src="./assets/images/masterclass/masterclass_ourworks_62.png" alt="after">
-            <p>После</p>
-        </div>
-        <div hidden>
-            <img src="./assets/images/masterclass/masterclass_ourworks_71.png" alt="before">
-            <p>До</p>
-        </div>
-        <div hidden>
-            <img src="./assets/images/masterclass/masterclass_ourworks_72.png" alt="after">
-            <p>После</p>
-        </div>
-        <div hidden>
-            <img src="./assets/images/masterclass/masterclass_ourworks_81.png" alt="before">
-            <p>До</p>
-        </div>
-        <div hidden>
-            <img src="./assets/images/masterclass/masterclass_ourworks_82.png" alt="after">
-            <p>После</p>
-        </div>
-    </section>
-    
-    <section>
-        <h3 id="header_masreclass">Какие техники изучите на МК</h3>
-        <ol>
-            <li>Снятие старой краски</li>
-            <li>Устранение царапин и мелких дефектов</li>
-            <li>Ремонт маленьких и  больших сколов</li>
-            <li>Ремонт поломанной и расклеившейся мебели</li>
-            <li>Замена старых поврежденных деталей</li>
-            <li>Приемы и идеи декора. Улучшение дизайна старой мебели</li>
-            <li>Покраска изделия</li>
-        </ol>
-    </section>
-    <section>
-        <div>
-            <img src="assets/images/masterclass/masterclass_secondlife.png" alt="secondlife">
-            <p>Подари вторую жизнь старой мебели и сохрани историю вашей семьи</p>
-        </div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <nav class="header__nav-left">
+                    <a class="header__link-left" href="./mastermind.html">Мастер-классы</a>
+                    <a class="header__link-left" href="./customised.html">Мебель на заказ</a>
+                </nav>
+                <a class="logo" href="./index.html">
+                    <img src="./assets/images/icon.svg" alt="Логотип"/>
+                </a>
+                <nav class="header__nav-right">
+                    <a class="header__link-right" href="#contact">Контакты</a>
+                    <a class="header__link-right" href="./about.html">О нас</a>
+                </nav>
+                
+            </div>
+            <nav class="hamburger">
+                <div class="hamburger__icon">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul class="hamburger__menu">
+                        <a href="./mastermind.html"><li>Мастер-классы</li></a>
+                        <a href="./customised.html"><li>Мебель на заказ</li></a>
+                        <a href="#contact"><li>Контакты</li></a>
+                        <a href="./about.html"><li>О нас</li></a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
         
-        <div>
-            <h4>Мастер-классы по реставрации мебели</h4>
-            <div>
-                <img src="./assets/images/masterclass/masterclass_restoration_1.png" alt="after">
-                <p>Буфет</p>
+        <main class="masterclass-main">
+            <h1 class="masterclass-main__title">Нам доверяют мебель с историей в 120 лет</h1>
+            <a href="#masterclass-techniques__title"><button class="masterclass-main__button">Смотреть мастер-классы</button></a>
+        </main>
+        
+        <section class="masterclass-ourworks">
+            <h2 class="masterclass-ourworks__title">Наши работы</h2>
+            <div class="masterclass-ourworks__card"> 
+                <img class="masterclass-ourworks__img" src="./assets/images/masterclass/masterclass_ourworks_11.png" alt="before">
+                <p class="masterclass-ourworks__caption">До</p>
             </div>
-            <div>
-                <img src="./assets/images/masterclass/masterclass_restoration_2.png" alt="after">
-                <p>Сундук</p>
+            <div class="masterclass-ourworks__card">
+                <img class="masterclass-ourworks__img" src="./assets/images/masterclass/masterclass_ourworks_12.png" alt="after">
+                <p class="masterclass-ourworks__caption">После</p>
             </div>
-            <div>
-                <img src="./assets/images/masterclass/masterclass_restoration_3.png" alt="after">
-                <p>Комод</p>
+            <div class="masterclass-ourworks__card"> 
+                <img class="masterclass-ourworks__img" src="./assets/images/masterclass/masterclass_ourworks_21.png" alt="before">
+                <p class="masterclass-ourworks__caption">До</p>
             </div>
-            <div>
-                <img src="./assets/images/masterclass/masterclass_restoration_4.png" alt="after">
-                <p>Советское кресло</p>
+            <div class="masterclass-ourworks__card"> 
+                <img class="masterclass-ourworks__img" src="./assets/images/masterclass/masterclass_ourworks_22.png" alt="after">
+                <p class="masterclass-ourworks__caption">После</p>
             </div>
-            <div>
-                <img src="./assets/images/masterclass/masterclass_restoration_5.png" alt="after">
-                <p>Стол</p>
+            <div class="masterclass-ourworks__card"> 
+                <img class="masterclass-ourworks__img" src="./assets/images/masterclass/masterclass_ourworks_31.png" alt="before">
+                <p class="masterclass-ourworks__caption">До</p>
             </div>
-            <div>
-                <img src="./assets/images/masterclass/masterclass_restoration_6.png" alt="after">
-                <p>Стул</p>
+            <div class="masterclass-ourworks__card">
+                <img class="masterclass-ourworks__img" src="./assets/images/masterclass/masterclass_ourworks_32.png" alt="after">
+                <p class="masterclass-ourworks__caption">После</p>
             </div>
-            <div>
-                <img src="./assets/images/masterclass/masterclass_restoration_7.png" alt="after">
-                <p>Обивка стула</p>
+            <div class="masterclass-ourworks__card"> 
+                <img class="masterclass-ourworks__img" src="./assets/images/masterclass/masterclass_ourworks_41.png" alt="before">
+                <p class="masterclass-ourworks__caption">До</p>
             </div>
-            <div>
-                <img src="./assets/images/masterclass/masterclass_restoration_8.png" alt="after">
-                <p>Ремонт стула</p>
+            <div class="masterclass-ourworks__card">
+                <img class="masterclass-ourworks__img" src="./assets/images/masterclass/masterclass_ourworks_42.png" alt="after">
+                <p class="masterclass-ourworks__caption">После</p>
             </div>
-        </div>
-
-        <div>
-            <h5>Мастер-классы по столярному делу</h5>
-            <img src="./assets/images/masterclass/masterclass_joinery_1.png" alt="table">
-            <p>Консольный столик</p>
-            <img src="./assets/images/masterclass/masterclass_joinery_2.png" alt="joinery">
-            <p>Столярное дело для начинающих</p>
-        </div>
-    </section>
-    <section>
-        <h6>Руководство по редизайну деревянной мебели</h6>
-        <p>Здесь мы собрали всю информацию от подбора инстурментов и материалов до сборки мебели и фурнитуры. Чтобы вы самостоятельно могли разобраться с нюансами работы со старой мебелью из дерева. Наше руководство непременно станет вашей настольной книгой по реставрации мебели.</p>
-        <img src="./assets/images/masterclass/masterclass_tutorial.PNG" alt="tutorial">
-        <button>Подробнее</button>
-    </section>
-
-    <footer></footer>
+            <button class="masterclass-ourworks__button">Смотреть больше примеров</button>
+            <div hidden class="masterclass-ourworks__card">
+                <img class="masterclass-ourworks__img" src="./assets/images/masterclass/masterclass_ourworks_51.png" alt="before">
+                <p class="masterclass-ourworks__caption">До</p>
+            </div>
+            <div hidden class="masterclass-ourworks__card">
+                <img class="masterclass-ourworks__img" src="./assets/images/masterclass/masterclass_ourworks_52.png" alt="after">
+                <p class="masterclass-ourworks__caption">После</p>
+            </div>
+            <div hidden class="masterclass-ourworks__card">
+                <img class="masterclass-ourworks__img" src="./assets/images/masterclass/masterclass_ourworks_61.png" alt="before">
+                <p class="masterclass-ourworks__caption">До</p>
+            </div>
+            <div hidden class="masterclass-ourworks__card">
+                <img class="masterclass-ourworks__img" src="./assets/images/masterclass/masterclass_ourworks_62.png" alt="after">
+                <p class="masterclass-ourworks__caption">После</p>
+            </div>
+            <div hidden class="masterclass-ourworks__card">
+                <img class="masterclass-ourworks__img" src="./assets/images/masterclass/masterclass_ourworks_71.png" alt="before">
+                <p class="masterclass-ourworks__caption">До</p>
+            </div>
+            <div hidden class="masterclass-ourworks__card">
+                <img class="masterclass-ourworks__img" src="./assets/images/masterclass/masterclass_ourworks_72.png" alt="after">
+                <p class="masterclass-ourworks__caption">После</p>
+            </div>
+            <div hidden class="masterclass-ourworks__card">
+                <img class="masterclass-ourworks__img" src="./assets/images/masterclass/masterclass_ourworks_81.png" alt="before">
+                <p class="masterclass-ourworks__caption">До</p>
+            </div>
+            <div hidden class="masterclass-ourworks__card">
+                <img class="masterclass-ourworks__img" src="./assets/images/masterclass/masterclass_ourworks_82.png" alt="after">
+                <p class="masterclass-ourworks__caption">После</p>
+            </div>
+        </section>
+        
+        <section class="masterclass-techniques">
+            <h3 class="masterclass-techniques__title" id="masterclass-techniques__title">Какие техники изучите на МК</h3>
+            <ol class="masterclass-techniques__list">
+                <li class="masterclass-techniques__item">Снятие старой краски</li>
+                <li class="masterclass-techniques__item">Устранение царапин и мелких дефектов</li>
+                <li class="masterclass-techniques__item">Ремонт маленьких и  больших сколов</li>
+                <li class="masterclass-techniques__item">Ремонт поломанной и расклеившейся мебели</li>
+                <li class="masterclass-techniques__item">Замена старых поврежденных деталей</li>
+                <li class="masterclass-techniques__item">Приемы и идеи декора. Улучшение дизайна старой мебели</li>
+                <li class="masterclass-techniques__item">Покраска изделия</li>
+            </ol>
+        </section>
+        
+        <section class="masterclass-products">
+            <div class="masterclass-secondlife">
+                <p class="masterclass-secondlife__text">Подари вторую жизнь старой мебели и сохрани историю вашей семьи</p>
+            </div>
+            
+            <div class="masterclass-restoration">
+                <h4 class="masterclass-restoration__title">Мастер-классы по реставрации мебели</h4>
+                <div class="masterclass-restoration__card">
+                    <img class="masterclass-restoration__img" src="./assets/images/masterclass/masterclass_restoration_1.png" alt="after">
+                    <p class="masterclass-restoration__caption">Буфет</p>
+                </div>
+                <div class="masterclass-restoration__card">
+                    <img class="masterclass-restoration__img" src="./assets/images/masterclass/masterclass_restoration_2.png" alt="after">
+                    <p class="masterclass-restoration__caption">Сундук</p>
+                </div>
+                <div class="masterclass-restoration__card">
+                    <img class="masterclass-restoration__img" src="./assets/images/masterclass/masterclass_restoration_3.png" alt="after">
+                    <p class="masterclass-restoration__caption">Комод</p>
+                </div>
+                <div class="masterclass-restoration__card">
+                    <img class="masterclass-restoration__img" src="./assets/images/masterclass/masterclass_restoration_4.png" alt="after">
+                    <p class="masterclass-restoration__caption">Советское кресло</p>
+                </div>
+                <div class="masterclass-restoration__card">
+                    <img class="masterclass-restoration__img" src="./assets/images/masterclass/masterclass_restoration_5.png" alt="after">
+                    <p class="masterclass-restoration__caption">Стол</p>
+                </div>
+                <div class="masterclass-restoration__card">
+                    <img class="masterclass-restoration__img" src="./assets/images/masterclass/masterclass_restoration_6.png" alt="after">
+                    <p class="masterclass-restoration__caption">Стул</p>
+                </div>
+                <div class="masterclass-restoration__card">
+                    <img class="masterclass-restoration__img" src="./assets/images/masterclass/masterclass_restoration_7.png" alt="after">
+                    <p class="masterclass-restoration__caption">Обивка стула</p>
+                </div>
+                <div class="masterclass-restoration__card">
+                    <img class="masterclass-restoration__img" src="./assets/images/masterclass/masterclass_restoration_8.png" alt="after">
+                    <p class="masterclass-restoration__caption">Ремонт стула</p>
+                </div>
+            </div>
+            
+            <div class="masterclass-joinery">
+                <h5 class="masterclass-joinery__title">Мастер-классы по столярному делу</h5>
+                <div class="masterclass-joinery__container">
+                    <img class="masterclass-joinery__img" src="./assets/images/masterclass/masterclass_joinery_1.png" alt="table">
+                    <p class="masterclass-joinery__capture">Консольный столик</p>
+                    <img class="masterclass-joinery__img" src="./assets/images/masterclass/masterclass_joinery_2.png" alt="joinery">
+                    <p class="masterclass-joinery__capture">Столярное дело для начинающих</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="masterclass-tutorial">
+            <h6 class="masterclass-tutorial__title">Руководство по редизайну деревянной мебели</h6>
+            <p>Здесь мы собрали всю информацию от подбора инстурментов и материалов до сборки мебели и фурнитуры. Чтобы вы самостоятельно могли разобраться с нюансами работы со старой мебелью из дерева. Наше руководство непременно станет вашей настольной книгой по реставрации мебели.</p>
+            <img class="masterclass-tutorial__img" src="./assets/images/masterclass/masterclass_tutorial.PNG" alt="tutorial">
+            <button class="masterclass-tutorial__button">Подробнее</button>
+        </section>
+        
+        <footer class="footer">
+            <div class="footer__container">
+                <a name="contact"></a>
+                <div class="footer__info">
+                    <p class="footer__text">
+                        Pet-проект команды разработчиков
+                    </p>
+                    <a class="footer__link" href="https://itgirlschool.com/">ITGIRLSCHOOL</a> 
+                </div>
+                <div class="footer__links">
+                    <a class="footer__link" href="./mastermind.html">Мастер-классы</a>
+                    <a class="footer__link" href="./customised.html">Мебель на заказ</a>
+                </div>
+                <div class="footer__links">
+                    <a class="footer__link" href="#contact">Контакты</a>
+                    <a class="footer__link" href="./about.html">О нас</a>
+                </div>
+                <div class="footer__links">
+                    <a class="footer__link" href="./privacy.html">Политика кофиденциальности</a>
+                    <a class="footer__link" href="./offer.html">Договор оферты</a>
+                </div>
+                <div class="footer__socials">
+                    <a class="footer__social" href="https://telegram.org/"><img src="./assets/images/telegram-icon.svg" alt="Telegram" /></a>
+                    <a class="footer__social" href="https://www.whatsapp.com/?lang=ru"><img src="./assets/images/whatsup-icon.svg" alt="WhatsUp" /></a>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
