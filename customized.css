@@ -1,0 +1,94 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 150%;
+    color: black;
+    background: #f3efea;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+.customized-head__container {
+    background-size: cover;
+}
+
+.customized-head {
+    display: block;
+    position: relative;
+    text-align: center;
+
+}
+
+.customized-head__title-top {
+    font-family: 'Open Sans';
+    color: white;
+    size: 16px;
+    line-height: 24px;
+}
+
+.customized-head__title-middle {
+    font-family: 'Tenor Sans';
+    color: white;
+    size: 48px;
+    line-height: 72px;
+}
+
+.customized-head__title-bottom {
+    font-family: 'Tenor Sans';
+    color: white;
+    font-size: 48px;
+    line-height: 72px;
+}
+
+.button_white {
+    font-family: 'Open Sans';
+    color: black;
+    background-color: #F6F6F6;
+}
+
+.customized-body__title {
+    font-family: 'Tenor Sans';
+    color: #57463A;
+    padding-top: 100px;
+}
+
+.choice_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.hover-image-scale {
+    display: inline-block;
+    overflow: hidden;
+    /* Скрываем всё за контуром */
+}
+
+.hover-image-scale img {
+    transition: 1s;
+    /* Время эффекта */
+    display: block;
+}
+
+.hover-image-scale img:hover {
+    transform: scale(1.2);
+    /* Увеличиваем масштаб */
+}
+
+.production-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: black;
+
+}
