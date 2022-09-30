@@ -28,25 +28,25 @@
             ><img src="./assets/images/icon.svg" alt="Логотип"
           /></a>
           <nav class="header__nav-right">
-            <a class="header__link-right" href="#">Контакты</a>
+            <a class="header__link-right" href="#contact">Контакты</a>
             <a class="header__link-right" href="./about.html">О нас</a>
           </nav>
-          <nav class="hamburger">
-            <div class="hamburger__icon">
-              <input type="checkbox" />
-              <span></span>
-              <span></span>
-              <span></span>
-              <ul class="hamburger__menu">
-                <a href="./mastermind.html"><li>Мастер-классы</li></a>
-                <a href="./customised.html"><li>Мебель на заказ</li></a>
-                <a href="#"><li>Контакты</li></a>
-                <a href="./about.html"><li>О нас</li></a>
-              </ul>
-            </div>
-          </nav>
+          
         </div>
-        
+        <nav class="hamburger">
+          <div class="hamburger__icon">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="hamburger__menu">
+              <a href="./mastermind.html"><li>Мастер-классы</li></a>
+              <a href="./customised.html"><li>Мебель на заказ</li></a>
+              <a href="#contact"><li>Контакты</li></a>
+              <a href="./about.html"><li>О нас</li></a>
+            </ul>
+          </div>
+        </nav>
       </header>
       <main class="main">
         <section class="about-head">
@@ -117,8 +117,10 @@
           <div class="about-philosophy__container">
             <h2 class="about-philosophy__title">Философия мастерской NIKASON</h2>
             <p class="about-philosophy__text">
-              Создавать что-то по-настоящему ценное и уникальное. Дарить радость и
-              уют в каждый дом
+              Создавать что-то по-настоящему ценное и уникальное.
+            </p>
+            <p class="about-philosophy__text">
+              Дарить радость и уют в каждый дом
             </p>
           </section>
           <section class="about-media">
@@ -128,19 +130,19 @@
                 О нашей мастерской пишут многие издания Якутии
               </p>
               <div class="about-media__image">
-                <img
+                <img class="about-media__img"
                   src="./assets/images/about/about-media__image-1.jpg"
                   alt="Статья в СМИ"
                 />
-                <img
+                <img class="about-media__img"
                   src="./assets/images/about/about-media__image-2.jpg"
                   alt="Статья в СМИ"
                 />
-                <img
+                <img class="about-media__img"
                   src="./assets/images/about/about-media__image-3.jpg"
                   alt="Статья в СМИ"
                 />
-                <img
+                <img class="about-media__img"
                   src="./assets/images/about/about-media__image-4.jpg"
                   alt="Скриншот из Инстаграм"
                 />
@@ -149,10 +151,11 @@
         </section>
         <section class="about-contact">
           <div class="about-contact__container">
+            <a name="contact"></a>
             <p class="about-contact__title">
               Оставьте заявку, и мы с вами свяжемся
             </p>
-            <a href="https://www.instagram.com/"
+            <a class="about-contact__button" href="https://www.whatsapp.com/?lang=ru"
               ><button class="button">Оставить заявку</button></a
             >
           </div>
@@ -160,24 +163,27 @@
       </main>
       <footer class="footer">
         <div class="footer__container">
-          <p class="footer__info">
-            Pet-проект команды разработчиков школы ITGirls
-          </p>
-          <div class="footer__links">
-            <a href="./mastermind.html">Мастер-классы</a>
-            <a href="./customised.html">Мебель на заказ</a>
+          <div class="footer__info">
+            <p class="footer__text">
+              Pet-проект команды разработчиков
+            </p>
+            <a class="footer__link" href="https://itgirlschool.com/">ITGIRLSCHOOL</a> 
           </div>
           <div class="footer__links">
-            <a href="#">Контакты</a>
-            <a href="./about.html">О нас</a>
+            <a class="footer__link" href="./mastermind.html">Мастер-классы</a>
+            <a class="footer__link" href="./customised.html">Мебель на заказ</a>
           </div>
           <div class="footer__links">
-            <a href="#">Политика кофиденциальности</a>
-            <a href="#">Договор оферты</a>
+            <a class="footer__link" href="#contact">Контакты</a>
+            <a class="footer__link" href="./about.html">О нас</a>
+          </div>
+          <div class="footer__links">
+            <a class="footer__link" href="#">Политика кофиденциальности</a>
+            <a class="footer__link" href="#">Договор оферты</a>
           </div>
           <div class="footer__socials">
-            <a href="#"><img src="./assets/images/instagram-icon.svg" alt="Instagram" /></a>
-            <a href="#"><img src="./assets/images/whatsup-icon.svg" alt="WhatsUp" /></a>
+            <a class="footer__social" href="https://telegram.org/"><img src="./assets/images/telegram-icon.svg" alt="Telegram" /></a>
+            <a class="footer__social" href="https://www.whatsapp.com/?lang=ru"><img src="./assets/images/whatsup-icon.svg" alt="WhatsUp" /></a>
           </div>
         </div>
       </footer>
