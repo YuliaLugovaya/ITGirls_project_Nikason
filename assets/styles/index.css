@@ -45,3 +45,44 @@ body {
 /*--------------index-services-------------*/
 
 /*--------------index-quality--------------*/
+
+/*---------------Footer---------------*/
+
+.footer {
+    background: #715B4B;
+    min-height: 40vh;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10vh;
+}
+
+.footer__text {
+    margin: 0;
+    font-size: 0.9em;
+    color: #F6F6F6;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__link {
+    font-size: 0.9em;
+    color: #F6F6F6;
+}
+
+.footer__socials {
+    display: flex;
+}
+
+.footer__social {
+    margin-left: 1.5vw;
+}
