@@ -5,6 +5,7 @@ html, body {
 body {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
+    font-weight: 300;
     color: #000;
     background: #f3efea;
 }
@@ -32,7 +33,6 @@ h2 {
     text-decoration: none;
     padding: 18px 56px;
     margin-top: 2em;
-    font-size: smaller;
     text-align: center;
 }
 
@@ -40,6 +40,16 @@ h2 {
     background: #678064;
     cursor: pointer;
     border: none;
+}
+
+[class*="__text"] {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 2.5em;
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
 /*---------------index-about---------------*/
@@ -58,12 +68,7 @@ h2 {
 }
 
 .index-about__text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     background: #EBEEEB;
-    font-size: 1.1em;
-    padding: 1.5em;
 }
 
 .index-about__paragraph_bold {
@@ -73,7 +78,27 @@ h2 {
 
 /*---------------index-video---------------*/
 
+.index-video__video {
+    max-width: 100%;
+}
+
 /*--------------index-services-------------*/
+
+.index-services__product-card {
+    display: flex;
+}
+
+.index-services__photo {
+    width: 30vw;
+}
+
+.index-services__text {
+    background: #E3DACE;
+}
+
+.index-services__text_workshop {
+    background: #D4CDC3;
+}
 
 /*--------------index-quality--------------*/
 
