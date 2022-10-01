@@ -39,9 +39,9 @@ a {
     color: #57463A;
 }
 [class*="__caption"] {
-    color: #323232;
     font-weight: 700;
     text-align: center;
+    color: #323232;
 }
 
 [class*="__button"] {
@@ -119,11 +119,11 @@ a {
 /*---------------Masterclass-main---------------*/
 
 .masterclass-main {
-    justify-content: center;
-    align-items: center;
-    height: 601px;
     display: flex;
     flex-wrap: wrap;
+    height: 601px;
+    justify-content: center;
+    align-items: center;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 58.25%, rgba(0, 0, 0, 0) 100%), url(/assets/images/masterclass/masterclass_main.png);
     background-size: cover;
 }
@@ -160,7 +160,7 @@ input[type="checkbox"]:checked ~ .masterclass-ourworks__hiddengallery {
 }
 .masterclass-ourworks__caption {
     font-weight: 400;
-    }
+}
 .masterclass-ourworks__hiddengallery, input[type="checkbox"] {
     display: none;
 }
@@ -173,30 +173,30 @@ input[type="checkbox"]:checked ~ .masterclass-ourworks__hiddengallery {
 /*---------------Masterclass-techniques---------------*/
 .masterclass-techniques__marker {
     float: left;
-    box-sizing: border-box;
     width: 3.75rem;
     height: 3.75rem;
-    background-color: #A1B29F;
-    color: #F6F6F6;
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-align: center;
+    box-sizing: border-box;
     padding-top: 1rem;
-    border-radius: 50%;
     margin-top: 1.5rem;
     margin-right: 1.5rem;
     margin-left: 30%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #F6F6F6;
+    background-color: #A1B29F;
+    border-radius: 50%;
 }
 .masterclass-techniques__item {
     line-height: 7rem;
-
+    
 }
 /*---------------Masterclass-restoration---------------*/
 .masterclass-restoration__gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
     row-gap: 1.5rem;
+    justify-items: center;
 }
 .masterclass-restoration__img {
     height: 251px;
@@ -207,30 +207,31 @@ input[type="checkbox"]:checked ~ .masterclass-ourworks__hiddengallery {
 
 /*---------------Masterclass-secondlife---------------*/
 .masterclass-secondlife {
-    align-items: center;
-    width: 100%;
-    height: 404px;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    height: 404px;
+    align-items: center;
     background-image: url(/assets/images/masterclass/masterclass_secondlife.png);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 .masterclass-secondlife__text {
-    font-family: 'Tenor Sans', sans-serif;
+    margin: 0 auto;
     font-style: normal;
     font-weight: 400;
     font-size: 2.7em;
     line-height: 150%;
-    color: #F6F6F6;
+    font-family: 'Tenor Sans', sans-serif;
     text-align: center;
+    color: #F6F6F6;
 }
 
 /*---------------Masterclass-joinery---------------*/
 .masterclass-joinery__container {
+    display: grid;
     width: 100vw;
     height: 80vh;
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 90% 10%;
     justify-items: center;
@@ -245,14 +246,15 @@ input[type="checkbox"]:checked ~ .masterclass-ourworks__hiddengallery {
 
 /*---------------Masterclass-tutorial---------------*/
 .masterclass-tutorial {
-    height: 100vh;
     display: grid;
+    height: 100vh;
     grid-template-columns: 55% 45%;
     grid-template-rows: 40% 40% 20%;
     margin-top: 5rem;
+    margin-bottom: 5rem;
     justify-items: left;
     align-items: center;
-    }
+}
 .masterclass-tutorial__title {
     grid-area: 1/1/2/2;
 }
@@ -263,8 +265,8 @@ input[type="checkbox"]:checked ~ .masterclass-ourworks__hiddengallery {
 .masterclass-tutorial__img {
     grid-area: 1/2/4/3;
     height: 100%;
-    object-fit: contain;
     justify-self: center;
+    object-fit: contain;
 }
 .masterclass-tutorial__button {
     grid-area: 3/1/4/2;
