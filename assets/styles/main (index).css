@@ -1,0 +1,47 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Tenor Sans', sans-serif;
+    color: #000000;
+    background: #f3efea;
+}
+
+.button {
+    background: #A1B29F;
+    color: #F6F6F6;
+    border: none;
+}
+
+/*---------------index-about---------------*/
+
+.index-about__title {
+    color: #57463A;
+    text-align: center;
+}
+
+.index-about__info {
+    display: flex;
+}
+
+.index-about__photo {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.index-about__text {
+    display: flex;
+    flex-direction: column;
+    background: #EBEEEB;
+}
+
+.index-about__paragraph_bold {
+    font-weight: bolder;
+}
+
+/*---------------index-video---------------*/
+
+/*--------------index-services-------------*/
+
+/*--------------index-quality--------------*/
