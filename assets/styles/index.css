@@ -4,6 +4,7 @@ html, body {
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-style: normal;
     color: #000;
     background: #f3efea;
 }
@@ -76,19 +77,41 @@ h2 {
 
 /*--------------index-quality--------------*/
 
-.index-quality__container {
+.index-quality {
     border: solid 7px;
     border-color: #A1B29F;
+    max-width: 1160px;
+    margin: 10vh auto;
+}
+.index-quality__container {
+    border: solid 1px;
+    border-color: #715B4B;
+    margin: 5px;
 }
 
 .index-quality__title-top {
     margin-top: 10vh;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .index-quality__title-bottom {
     margin-top: 2vh;
     margin-bottom: 2vh;
+    text-align: center;
+}
+
+.index-quality__text {
+    margin: 4% 10% 2% 10%;
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+.index-quality__image {
+    margin-left: 83%;
+    margin-bottom: 2%;
+    width: 10em;
 }
 
 /*---------------Footer---------------*/
