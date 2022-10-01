@@ -8,10 +8,21 @@ body {
     background: #f3efea;
 }
 
+[class*="__container"]{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .button {
     background: #A1B29F;
     color: #F6F6F6;
     border: none;
+    text-decoration: none;
+    padding: 10px;
 }
 
 /*---------------index-about---------------*/
@@ -38,6 +49,11 @@ body {
 
 .index-about__paragraph_bold {
     font-weight: bolder;
+    margin: 5%;
+}
+
+.index-about__paragraph {
+    margin: 5%;
 }
 
 /*---------------index-video---------------*/
