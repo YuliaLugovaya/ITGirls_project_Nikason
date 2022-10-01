@@ -38,8 +38,13 @@ a {
     line-height: 150%;
     color: #57463A;
 }
+[class*="__caption"] {
+    color: #323232;
+    font-weight: 700;
+    text-align: center;
+}
 
-button {
+[class*="__button"] {
     border: none;
     background: #A1B29F;
     font-weight: 700;
@@ -50,7 +55,7 @@ button {
     transition: 0.5s;
 }
 
-button:hover {
+[class*="__button"]:hover {
     background: #678064;
     cursor: pointer;
     border: none;
@@ -135,23 +140,70 @@ button:hover {
     color: #4C6D77;
     background: #b3b3b3;
 }
-/*---------------Masterclass-main---------------*/
+
+/*---------------Masterclass-ourworks---------------*/
+
 .masterclass-ourworks {
     width: 100vw;
+}
+.masterclass-ourworks__gallery,
+input[type="checkbox"]:checked ~ .masterclass-ourworks__hiddengallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 132px repeat(2, 300px 60px) 91px;
-}
-.masterclass-ourworks__title {
-    grid-area: 1/1/2/5;
+    justify-items: center;
+    row-gap: 1.5rem;
 }
 .masterclass-ourworks__img {
-    grid-area: 1/2/2/3;
-    object-fit: cover;
+    height: 300px;
+    width: 260px;
+    object-fit: fill;
+}
+.masterclass-ourworks__caption {
+    font-weight: 400;
+    }
+.masterclass-ourworks__hiddengallery, input[type="checkbox"] {
+    display: none;
 }
 .masterclass-ourworks__button {
-    grid-area: 6/2/7/4;
+    display: block;
+    width: fit-content;
+    margin: 3rem auto 4rem;
 }
+
+/*---------------Masterclass-techniques---------------*/
+.masterclass-techniques__marker {
+    float: left;
+    box-sizing: border-box;
+    width: 3.75rem;
+    height: 3.75rem;
+    background-color: #A1B29F;
+    color: #F6F6F6;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 1rem;
+    border-radius: 50%;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    margin-left: 30%;
+}
+.masterclass-techniques__item {
+    line-height: 7rem;
+
+}
+/*---------------Masterclass-restoration---------------*/
+.masterclass-restoration__gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    row-gap: 1.5rem;
+}
+.masterclass-restoration__img {
+    height: 251px;
+    width: 207px;
+    object-fit: contain;
+}
+
 
 /*---------------Masterclass-secondlife---------------*/
 .masterclass-secondlife {
@@ -187,12 +239,38 @@ button:hover {
     height: 100%;
     grid-row: 1/2;
 }
-.masterclass-joinery__capture {
+.masterclass-joinery__caption {
     grid-row: 2/3;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 150%;
 }
+
+/*---------------Masterclass-tutorial---------------*/
+.masterclass-tutorial {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 40% 40% 20%;
+    margin-top: 5rem;
+    justify-items: left;
+    align-items: center;
+    }
+.masterclass-tutorial__title {
+    grid-area: 1/1/2/2;
+}
+.masterclass-tutorial__text {
+    grid-area: 2/1/3/2;
+    align-self: center;
+}
+.masterclass-tutorial__img {
+    grid-area: 1/2/4/3;
+    height: 100%;
+    object-fit: contain;
+    justify-self: center;
+}
+.masterclass-tutorial__button {
+    grid-area: 3/1/4/2;
+}
+
+
 /*---------------Footer---------------*/
 
 .footer {
