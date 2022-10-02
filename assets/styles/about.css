@@ -229,23 +229,23 @@ a {
 
 .about-media__image {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 60vh;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
 }
 
 .about-media__img {
-    width: 200px; 
+    width: 17vw; 
     padding-left: 1vw;
     padding-right: 1vw;
-    transition: width 0.5s ease;
+    /*transition: width 0.5s ease;*/
 }
 
-.about-media__img:hover { 
+/*.about-media__img:hover { 
     width: 20vw; 
     cursor: pointer;
-}
+}*/
 
 /*---------------About-contact---------------*/
 
@@ -295,6 +295,7 @@ a {
 
 .footer__socials {
     display: flex;
+    margin-bottom: 5vh;
 }
 
 .footer__social {
@@ -331,14 +332,9 @@ a {
     }
 
     .about-media__img {
-        width: 50vw;
+        width: 70vw;
         padding-top: 1vw;
         padding-bottom: 1vw;
-    }
-
-    .about-media__img:hover { 
-        width: 70vw; 
-        cursor: pointer;
     }
     
     .about-founder__container {
@@ -348,6 +344,12 @@ a {
 
     .about-founder__content {
         margin-top: 5vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .about-founder__text, .about-founder__subtitle {
+        font-size: 1.2em;
     }
 
     .footer__container {
@@ -362,6 +364,12 @@ a {
 
     .footer__socials {
         margin-top: 5vh;
+    }
+
+    .footer__text, .footer__link {
+        font-size: 1.3em;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
     }
 
 }
@@ -383,21 +391,23 @@ a {
     .hamburger__icon {
         display: block;
         position: relative;
-        top: 50px;
-        left: 50px;
+        /*top: 50px;*/
+        /*left: 50px;*/
         z-index: 1;
         -webkit-user-select: none;
         user-select: none;
+        margin-left: 5vw;
+        margin-top: 5vw;
     }
     
     .hamburger__icon a {
         text-decoration: none;
-        color: #232323;
+        color: #323232;
         transition: color 0.3s ease;
     }
     
     .hamburger__icon a:hover {
-        color: tomato;
+        color: #505050;
     }
     
     .hamburger__icon input {
@@ -411,6 +421,7 @@ a {
         opacity: 0; 
         z-index: 2; 
         -webkit-touch-callout: none;
+        
     }
     
     .hamburger__icon span {
@@ -456,7 +467,6 @@ a {
         padding: 50px;
         padding-top: 125px;
         background: #f3efea;
-        list-style-type: none;
         -webkit-font-smoothing: antialiased;
         transform-origin: 0% 0%;
         transform: translate(-100%, 0);
@@ -473,6 +483,10 @@ a {
 
     .hamburger__link {
         margin: 5vh 0;
+    }
+
+    .about-figures__container {
+        flex-direction: column;
     }
 }
 
