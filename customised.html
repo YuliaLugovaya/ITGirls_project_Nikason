@@ -6,114 +6,165 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/customized.css" />
-    <link rel="stylesheet" href="/assets/styles/normalize.css" />
-    <link rel="shortcut icon" href="./assets/images/icon.svg" type="image/svg" />
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles/customised.css">
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Tenor+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/icon.svg" type="image/svg">
     <title>Мебель на заказ</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <header>
-
+        <header class="header">
+            <div class="header__container">
+                <nav class="header__nav-left">
+                    <a class="header__link-left" href="./masterclass.html">Мастер-классы</a>
+                    <a class="header__link-left" href="./customised.html">Мебель на заказ</a>
+                </nav>
+                <a class="logo" href="./index.html"><img src="./assets/images/icon.svg" alt="Логотип" /></a>
+                <nav class="header__nav-right">
+                    <a class="header__link-right" href="#contact">Контакты</a>
+                    <a class="header__link-right" href="./about.html">О нас</a>
+                </nav>
+            </div>
+            <nav class="hamburger">
+                <div class="hamburger__icon">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div class="hamburger__menu">
+                        <div class="hamburger__link">
+                            <a href="./mastermind.html">Мастер-классы</a>
+                        </div>
+                        <div class="hamburger__link">
+                            <a href="./customised.html">Мебель на заказ</a>
+                        </div>
+                        <div class="hamburger__link"><a href="#contact">Контакты</a></div>
+                        <div class="hamburger__link">
+                            <a href="./about.html">О нас</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </header>
         <main class="main">
-            <section class="customized-head">
-                <div class="customized-head__container"
-                    style="background-image: url(assets/images/customized/customized_head.png)">
-                    <p class="customized-head__title-top">Воплотим вашу любую задумку в реальность</p>
-                    <h1 class="customized-head__title-middle">Столярная мастерская</h1>
-                    <h2 class="customized-head__title-bottom">NIKASON BRAND</h2>
-                    <button type="button" class="btn btn-light">Заказать мебель</button>
+            <section class="customised-head">
+                <div class="customised-head__container">
+                    <img class="background-image" src="./assets/images/customized/customized_head.png" alt="background">
+                    <p class="customised-head__title-top">Воплотим вашу любую задумку в реальность</p>
+                    <h1 class="customised-head__title-middle">Столярная мастерская</h1>
+                    <h2 class="customised-head__title-bottom">NIKASON BRAND</h2>
+                    <a class="button_white" href="#order-furniture">Заказать мебель</a>
                 </div>
             </section>
-        </main>
-        <section class="customized-body">
-            <div class="customized-body_container">
-                <h2 class="customized-body__title">Почему выбирают нас</h2>
-                <div class="choice_container">
-                    <div class="experience">
-                        <div class="experience__title">Давно на рынке</div>
-                        <hr>
-                        <div class="experience__text">Опыт работы на рынке больше 10 лет</div>
+            <section class="customised-choice">
+                <h2 class="customised-choice__title">Почему выбирают нас</h2>
+                <div class="customised-choice__items">
+                    <div class="choice">
+                        <div class="choice__title">Давно на рынке</div>
+                        <div class="choice__text">Опыт работы на рынке больше 10 лет</div>
                     </div>
-                    <div class="warranty">
-                        <div class="warranty__title">Гарантия качества</div>
-                        <hr>
-                        <div class="warranty__text">Предоставляем гарантию 12 месяцев на изделия </div>
+                    <div class="choice">
+                        <div class="choice__title">Гарантия качества</div>
+                        <div class="choice__text">Предоставляем гарантию 12 месяцев на изделия </div>
                     </div>
-                    <div class="transp">
-                        <div class="transp__title">Юридическая прозрачность</div>
-                        <hr>
-                        <div class="transp__text">Заключаем с каждым клиентом договор</div>
+                    <div class="choice">
+                        <div class="choice__title">Юридическая прозрачность</div>
+                        <div class="choice__text">Заключаем с каждым клиентом договор</div>
                     </div>
-                    <div class="ecology">
-                        <div class="ecology__title">Экологичность</div>
-                        <hr>
-                        <div class="ecology__text">Мебель из натуральной древесины, краски без токсичного состава</div>
+                    <div class="choice">
+                        <div class="choice__title">Экологичность</div>
+                        <div class="choice__text">Мебель из натуральной древесины, краски без токсичного состава
+                        </div>
                     </div>
-                    <div class="exclus">
-                        <div class="exclus__title">Эксклюзивность</div>
-                        <hr>
-                        <div class="exclus__text">Каждая мебель изготовлена по индивидуальному дизайну </div>
+                    <div class="choice">
+                        <div class="choice__title">Эксклюзивность</div>
+                        <div class="choice__text">Каждая мебель изготовлена по индивидуальному дизайну </div>
                     </div>
-                    <div class="durability">
-                        <div class="durability__title">Долговечность</div>
-                        <hr>
-                        <div class="durability__text">Мебель из массива дерева прослужит даже вашим детям</div>
+                    <div class="choice">
+                        <div class="choice__title">Долговечность</div>
+                        <div class="choice__text">Мебель из массива дерева прослужит даже вашим детям</div>
                     </div>
                 </div>
-                <div class="portfolio">
-                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            </section>
+            <section class="portfolio">
+                <h2 class="portfolio-title">Портфолио</h2>
+                <div class="portfolio__container">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                                aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                                aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                                aria-label="Slide 8"></button>
+                        </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="/assets/images/customized/customized_portfolio1.png" class="d-block w-100"
-                                    alt="portfolio1">
+                                <img src="./assets/images/customized/customized_portfolio1.png" class="d-block w-100"
+                                    alt="портфолио1">
                             </div>
                             <div class="carousel-item">
-                                <img src="/assets/images/customized/customized_portfolio2.png" class="d-block w-100"
-                                    alt="portfolio2">
+                                <img src="./assets/images/customized/customized_portfolio2.png" class="d-block w-100"
+                                    alt="портфолио2">
                             </div>
                             <div class="carousel-item">
-                                <img src="/assets/images/customized/customized_portfolio3.png" class="d-block w-100"
-                                    alt="portfolio3">
+                                <img src="./assets/images/customized/customized_portfolio3.png" class="d-block w-100"
+                                    alt="портфолио3">
                             </div>
                             <div class="carousel-item">
-                                <img src="/assets/images/customized/customized_portfolio4.png" class="d-block w-100"
-                                    alt="portfolio4">
+                                <img src="./assets/images/customized/customized_portfolio4.png" class="d-block w-100"
+                                    alt="портфолио4">
                             </div>
                             <div class="carousel-item">
-                                <img src="/assets/images/customized/customized_portfolio5.png" class="d-block w-100"
-                                    alt="portfolio5">
+                                <img src="./assets/images/customized/customized_portfolio5.png" class="d-block w-100"
+                                    alt="портфолио5">
                             </div>
                             <div class="carousel-item">
-                                <img src="/assets/images/customized/customized_portfolio6.png" class="d-block w-100"
-                                    alt="portfolio6">
+                                <img src="./assets/images/customized/customized_portfolio6.png" class="d-block w-100"
+                                    alt="портфолио6">
                             </div>
                             <div class="carousel-item">
-                                <img src="/assets/images/customized/customized_portfolio7.png" class="d-block w-100"
-                                    alt="portfolio7">
+                                <img src="./assets/images/customized/customized_portfolio7.png" class="d-block w-100"
+                                    alt="портфолио7">
                             </div>
                             <div class="carousel-item">
-                                <img src="/assets/images/customized/customized_portfolio8.png" class="d-block w-100"
-                                    alt="portfolio8">
+                                <img src="./assets/images/customized/customized_portfolio8.png" class="d-block w-100"
+                                    alt="портфолио8">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Предыдущий</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
                             data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Следующий</span>
                         </button>
                     </div>
                 </div>
-                <h2 class="production">Этапы производства</h2>
-                <div class="production_container">
+            </section>
+
+            <section class="production">
+                <h2 class="production__title">Этапы производства</h2>
+                <div class="production__container">
                     <div class="step">
                         <div class="step__title">1</div>
                         <div class="step__text">Встреча с клиентом</div>
@@ -139,16 +190,64 @@
                         <div class="step__text">Доставка и монтаж изделия (при необходимости)</div>
                     </div>
                 </div>
-                <h2 class="reviews">Клиенты о нас</h2>
-                <div class="hover-image-scale">
-                    <img src="/assets/images/customized/customized_review1.png" alt="review1" class="hover-image-scale">
-                    <img src="/assets/images/customized/customized_review2.png" alt="review2" class="hover-image-scale">
-                    <img src="/assets/images/customized/customized_review3.png" alt="review3" class="hover-image-scale">
-                    <img src="/assets/images/customized/customized_review4.png" alt="review4" class="hover-image-scale">
-                    <img src="/assets/images/customized/customized_review5.png" alt="review5" class="hover-image-scale">
+            </section>
+            <section class="reviews">
+                <h2 class="reviews__title">Клиенты о нас</h2>
+                <div class="reviews__container">
+                    <div class="reviews__image">
+                        <img class="reviews__img" src="/assets/images/customized/customized_review1.png"
+                            alt="Отзыв в WhatsApp1">
+                        <img class="reviews__img" src="/assets/images/customized/customized_review2.png"
+                            alt="Отзыв в WhatsApp2">
+                        <img class="reviews__img" src="/assets/images/customized/customized_review3.png"
+                            alt="Отзыв в WhatsApp3">
+                        <img class="reviews__img" src="/assets/images/customized/customized_review4.png"
+                            alt="Отзыв в Instagram1">
+                        <img class="reviews__img" src="/assets/images/customized/customized_review5.png"
+                            alt="Отзыв в Instagram2">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section class="about-contact">
+            <div class="about-contact__container">
+                <p><a name="order-furniture"></a></p>
+                <h2 class="about-contact__title">
+                    Оставьте заявку, и мы с вами свяжемся
+                </h2>
+                <div class="about-contact__button">
+                    <a class="button" href="https://www.whatsapp.com/?lang=ru">Оставить заявку</a>
                 </div>
             </div>
         </section>
+        </main>
+        <footer class="footer">
+            <a id="contact"></a>
+            <div class="footer__container">
+                <div class="footer__info">
+                    <p class="footer__text">Pet-проект команды разработчиков</p>
+                    <a class="footer__link" href="https://itgirlschool.com/">ITGIRLSCHOOL</a>
+                </div>
+                <div class="footer__links">
+                    <a class="footer__link" href="./masterclass.html">Мастер-классы</a>
+                    <a class="footer__link" href="./customised.html">Мебель на заказ</a>
+                </div>
+                <div class="footer__links">
+                    <a class="footer__link" href="#contact">Контакты</a>
+                    <a class="footer__link" href="./about.html">О нас</a>
+                </div>
+                <div class="footer__links">
+                    <a class="footer__link" href="./privacy.html">Политика кофиденциальности</a>
+                    <a class="footer__link" href="./offer.html">Договор оферты</a>
+                </div>
+                <div class="footer__socials">
+                    <a class="footer__social" href="https://telegram.org/"><img src="./assets/images/telegram-icon.svg"
+                            alt="Telegram" /></a>
+                    <a class="footer__social" href="https://www.whatsapp.com/?lang=ru"><img
+                            src="./assets/images/whatsup-icon.svg" alt="WhatsUp" /></a>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
