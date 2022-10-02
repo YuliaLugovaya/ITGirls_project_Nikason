@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/normalize.css" />
     <link rel="stylesheet" href="./assets/styles/about.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Tenor+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="shortcut icon"
       href="./assets/images/icon.svg"
@@ -21,8 +24,12 @@
       <header class="header">
         <div class="header__container">
           <nav class="header__nav-left">
-            <a class="header__link-left" href="./mastermind.html">Мастер-классы</a>
-            <a class="header__link-left" href="./customised.html">Мебель на заказ</a>
+            <a class="header__link-left" href="./masterclass.html"
+              >Мастер-классы</a
+            >
+            <a class="header__link-left" href="./customised.html"
+              >Мебель на заказ</a
+            >
           </nav>
           <a class="logo" href="./index.html"
             ><img src="./assets/images/icon.svg" alt="Логотип"
@@ -31,7 +38,6 @@
             <a class="header__link-right" href="#contact">Контакты</a>
             <a class="header__link-right" href="./about.html">О нас</a>
           </nav>
-          
         </div>
         <nav class="hamburger">
           <div class="hamburger__icon">
@@ -39,139 +45,153 @@
             <span></span>
             <span></span>
             <span></span>
-            <ul class="hamburger__menu">
-              <a href="./mastermind.html"><li>Мастер-классы</li></a>
-              <a href="./customised.html"><li>Мебель на заказ</li></a>
-              <a href="#contact"><li>Контакты</li></a>
-              <a href="./about.html"><li>О нас</li></a>
-            </ul>
+            <div class="hamburger__menu">
+              <div class="hamburger__link">
+                <a href="./mastermind.html">Мастер-классы</a>
+              </div>
+              <div class="hamburger__link">
+                <a href="./customised.html">Мебель на заказ</a>
+              </div>
+              <div class="hamburger__link"><a href="#contact">Контакты</a></div>
+              <div class="hamburger__link">
+                <a href="./about.html">О нас</a>
+              </div>
+            </div>
           </div>
         </nav>
       </header>
       <main class="main">
         <section class="about-head">
           <div class="about-head__container">
-            <h2 class="about-head__title-top">
-              История создания мастерской
-            </h2>
-            <h1 class="about-head__title-bottom">
-              NIKASON BRAND
-            </h1>
+            <h2 class="about-head__title-top">История создания мастерской</h2>
+            <h1 class="about-head__title-bottom">NIKASON BRAND</h1>
             <img
               class="about-head__image"
               src="./assets/images/about/about-head__photo.jpg"
               alt="Основатели"
             />
-          </section>
-          <section class="about-figures">
-            <div class="about-figures__container">
-              <div class="about-figures__item">
-                <h2 class="about-figures__title">+10 лет</h2>
-                <p class="about-figures__text">На рынке по производству мебели</p>
-              </div>
-              <div class="about-figures__item">
-                <h2 class="about-figures__title">+1500</h2>
-                <p class="about-figures__text">Изготовлено мебели</p>
-              </div>
-              <div class="about-figures__item">
-                <h2 class="about-figures__title">120 лет</h2>
-                <p class="about-figures__text">
-                  Самой старинной мебели для реставрации
-                </p>
-              </div>
+          </div>
+        </section>
+        <section class="about-figures">
+          <div class="about-figures__container">
+            <div class="about-figures__item">
+              <h2 class="about-figures__title">+10 лет</h2>
+              <p class="about-figures__text">На рынке по производству мебели</p>
             </div>
+            <div class="about-figures__item">
+              <h2 class="about-figures__title">+1500</h2>
+              <p class="about-figures__text">Изготовлено мебели</p>
+            </div>
+            <div class="about-figures__item">
+              <h2 class="about-figures__title">120 лет</h2>
+              <p class="about-figures__text">
+                Самой старинной мебели для реставрации
+              </p>
+            </div>
+          </div>
         </section>
         <section class="about-founder">
           <div class="about-founder__container">
             <img
-            class="about-founder__image"
-            src="./assets/images/about/about-founder__photo.jpg"
-            alt="Основатель"
-          />
-          <div class="about-founder__content">
-            <h2 class="about-founder__title about-founder__title_founder">Никита Колодезников-Матчитов</h2>
-            <h3 class="about-founder__subtitle">Основатель мастерской</h3>
-            <p class="about-founder__text">
-              С детства я был окружен творческими людьми, мой дедушка был
-              строителем и мастером по дереву. Спустя много лет и мне передалась
-              его любовь к дереву - в свободное время мастерил для себя
-              небольшие изделия из древесины.
-            </p>
-            <p class="about-founder__text">
-              Более десяти лет назад построил двухэтажный гараж, на втором этаже
-              расположилась наша мастерская. Начинал производство практически “с
-              нуля”, с каждой зарплаты понемногу откладывал на покупку
-              инструментов и станков.
-            </p>
-            <p class="about-founder__text">
-              Постепенно начали появляться первые заказы. Несколько лет назад мы
-              с супругой решили еще заняться ремонтом и реставрацией мебели. Эту
-              идею предложили сами клиенты, поскольку периодически приходили с
-              таким запросом. В основном, реставрацией занимается супруга
-              Саргылана. Мы с ней одна сплоченная, дружная и отличная команда.
-            </p>
-          </div>
+              class="about-founder__image"
+              src="./assets/images/about/about-founder__photo.jpg"
+              alt="Основатель"
+            />
+            <div class="about-founder__content">
+              <h2 class="about-founder__title about-founder__title_founder">
+                Никита Колодезников-Матчитов
+              </h2>
+              <h3 class="about-founder__subtitle">Основатель мастерской</h3>
+              <p class="about-founder__text">
+                С детства я был окружен творческими людьми, мой дедушка был
+                строителем и мастером по дереву. Спустя много лет и мне
+                передалась его любовь к дереву - в свободное время мастерил для
+                себя небольшие изделия из древесины.
+              </p>
+              <p class="about-founder__text">
+                Более десяти лет назад построил двухэтажный гараж, на втором
+                этаже расположилась наша мастерская. Начинал производство
+                практически “с нуля”, с каждой зарплаты понемногу откладывал на
+                покупку инструментов и станков.
+              </p>
+              <p class="about-founder__text">
+                Постепенно начали появляться первые заказы. Несколько лет назад
+                мы с супругой решили еще заняться ремонтом и реставрацией
+                мебели. Эту идею предложили сами клиенты, поскольку периодически
+                приходили с таким запросом. В основном, реставрацией занимается
+                супруга Саргылана. Мы с ней одна сплоченная, дружная и отличная
+                команда.
+              </p>
+            </div>
           </div>
         </section>
         <section class="about-philosophy">
           <div class="about-philosophy__container">
-            <h2 class="about-philosophy__title">Философия мастерской NIKASON</h2>
+            <h2 class="about-philosophy__title">
+              Философия мастерской NIKASON
+            </h2>
             <p class="about-philosophy__text">
               Создавать что-то по-настоящему ценное и уникальное.
             </p>
             <p class="about-philosophy__text">
               Дарить радость и уют в каждый дом
             </p>
-          </section>
-          <section class="about-media">
-            <div class="about-media__container">
-              <h2 class="about-media__title">СМИ о нас</h2>
-              <p class="about-media__text">
-                О нашей мастерской пишут многие издания Якутии
-              </p>
-              <div class="about-media__image">
-                <img class="about-media__img"
-                  src="./assets/images/about/about-media__image-1.jpg"
-                  alt="Статья в СМИ"
-                />
-                <img class="about-media__img"
-                  src="./assets/images/about/about-media__image-2.jpg"
-                  alt="Статья в СМИ"
-                />
-                <img class="about-media__img"
-                  src="./assets/images/about/about-media__image-3.jpg"
-                  alt="Статья в СМИ"
-                />
-                <img class="about-media__img"
-                  src="./assets/images/about/about-media__image-4.jpg"
-                  alt="Скриншот из Инстаграм"
-                />
-              </div>
+          </div>
+        </section>
+        <section class="about-media">
+          <div class="about-media__container">
+            <h2 class="about-media__title">СМИ о нас</h2>
+            <p class="about-media__text">
+              О нашей мастерской пишут многие издания Якутии
+            </p>
+            <div class="about-media__image">
+              <img
+                class="about-media__img"
+                src="./assets/images/about/about-media__image-1.jpg"
+                alt="Статья в СМИ"
+              />
+              <img
+                class="about-media__img"
+                src="./assets/images/about/about-media__image-2.jpg"
+                alt="Статья в СМИ"
+              />
+              <img
+                class="about-media__img"
+                src="./assets/images/about/about-media__image-3.jpg"
+                alt="Статья в СМИ"
+              />
+              <img
+                class="about-media__img"
+                src="./assets/images/about/about-media__image-4.jpg"
+                alt="Скриншот из Инстаграм"
+              />
             </div>
+          </div>
         </section>
         <section class="about-contact">
           <div class="about-contact__container">
-            
-            <p class="about-contact__title">
+            <h2 class="about-contact__title">
               Оставьте заявку, и мы с вами свяжемся
-            </p>
-            <a class="about-contact__button" href="https://www.whatsapp.com/?lang=ru"
-              ><button class="button">Оставить заявку</button></a
-            >
+            </h2>
+            <div class="about-contact__button">
+              <a class="button" href="https://www.whatsapp.com/?lang=ru"
+                >Оставить заявку</a
+              >
+            </div>
           </div>
         </section>
       </main>
       <footer class="footer">
+        <a id="contact"></a>
         <div class="footer__container">
-          <a name="contact"></a>
           <div class="footer__info">
-            <p class="footer__text">
-              Pet-проект команды разработчиков
-            </p>
-            <a class="footer__link" href="https://itgirlschool.com/">ITGIRLSCHOOL</a> 
+            <p class="footer__text">Pet-проект команды разработчиков</p>
+            <a class="footer__link" href="https://itgirlschool.com/"
+              >ITGIRLSCHOOL</a
+            >
           </div>
           <div class="footer__links">
-            <a class="footer__link" href="./mastermind.html">Мастер-классы</a>
+            <a class="footer__link" href="./masterclass.html">Мастер-классы</a>
             <a class="footer__link" href="./customised.html">Мебель на заказ</a>
           </div>
           <div class="footer__links">
@@ -179,12 +199,18 @@
             <a class="footer__link" href="./about.html">О нас</a>
           </div>
           <div class="footer__links">
-            <a class="footer__link" href="./privacy.html">Политика кофиденциальности</a>
+            <a class="footer__link" href="./privacy.html"
+              >Политика кофиденциальности</a
+            >
             <a class="footer__link" href="./offer.html">Договор оферты</a>
           </div>
           <div class="footer__socials">
-            <a class="footer__social" href="https://telegram.org/"><img src="./assets/images/telegram-icon.svg" alt="Telegram" /></a>
-            <a class="footer__social" href="https://www.whatsapp.com/?lang=ru"><img src="./assets/images/whatsup-icon.svg" alt="WhatsUp" /></a>
+            <a class="footer__social" href="https://telegram.org/"
+              ><img src="./assets/images/telegram-icon.svg" alt="Telegram"
+            /></a>
+            <a class="footer__social" href="https://www.whatsapp.com/?lang=ru"
+              ><img src="./assets/images/whatsup-icon.svg" alt="WhatsUp"
+            /></a>
           </div>
         </div>
       </footer>

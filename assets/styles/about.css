@@ -44,7 +44,7 @@ a {
     color: #57463A;
 }
 
-button {
+.button {
     border: none;
     background: #A1B29F;
     font-weight: 700;
@@ -55,7 +55,7 @@ button {
     transition: 0.5s;
 }
 
-button:hover {
+.button:hover {
     background: #678064;
     cursor: pointer;
     border: none;
@@ -256,7 +256,6 @@ button:hover {
     text-align: center;
     margin-top: 5vh;
     margin-bottom: 20vh;
-    border: none;
 }
 
 /*---------------Footer---------------*/
@@ -419,13 +418,16 @@ button:hover {
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     }
     
-    .hamburger__menu li {
-        padding: 10px 0;
-        font-size: 22px;
+    .hamburger__menu a {
+        font-size: 2em;
     }
     
-    .hamburger__icon input:checked ~ ul {
+    .hamburger__icon input:checked ~ .hamburger__menu {
         transform: none;
+    }
+
+    .hamburger__link {
+        margin: 5vh 0;
     }
 }
 

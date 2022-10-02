@@ -1,0 +1,315 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 150%;
+    color: #000000;
+    background: #f3efea;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+[class*="__container"]{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;    
+}
+
+a {
+    text-decoration: none;
+}
+
+[class*="__title"] {
+    font-family: 'Tenor Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.7em;
+    line-height: 150%;
+    color: #57463A;
+}
+[class*="__caption"] {
+    font-weight: 700;
+    text-align: center;
+    color: #323232;
+}
+
+[class*="__button"] {
+    border: none;
+    background: #A1B29F;
+    font-weight: 700;
+    font-size: 0.9em;
+    text-align: center;
+    color: #F6F6F6;
+    padding: 18px 51px;
+    transition: 0.5s;
+}
+
+[class*="__button"]:hover {
+    background: #678064;
+    cursor: pointer;
+    border: none;
+}
+
+/*---------------Header---------------*/
+
+.header {
+    min-width: 15vh;
+    border-bottom: 1px solid #000000;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.header__nav-left, .header__nav-right {
+    width: 45vw;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.header__nav-left {
+    display: flex;
+}
+
+.header__nav-right {
+    display: flex;
+    justify-content: end;
+}
+
+.header__link-left {
+    margin-right: 5vw;
+    font-size: 0.9em;
+    color: #323232;
+}
+
+.header__link-right {
+    margin-left: 5vw;
+    font-size: 0.9em;
+    color: #323232;
+}
+
+.header__link-left:hover, .header__link-right:hover {
+    text-decoration: underline;
+}
+
+.hamburger__icon {
+    display: none;
+}
+
+/*---------------Masterclass-main---------------*/
+
+.masterclass-main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 601px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 58.25%, rgba(0, 0, 0, 0) 100%), url(/assets/images/masterclass/masterclass_main.png);
+    background-size: cover;
+}
+.masterclass-main__title {
+    padding-top: 2rem;
+    align-self: flex-end;
+    color: #F6F6F6;
+}
+.masterclass-main__button {
+    color: #4C6D77;
+    background: #F6F6F6;
+}
+.masterclass-main__button:hover {
+    color: #4C6D77;
+    background: #b3b3b3;
+}
+
+/*---------------Masterclass-ourworks---------------*/
+
+.masterclass-ourworks {
+    width: 100vw;
+}
+.masterclass-ourworks__gallery,
+input[type="checkbox"]:checked ~ .masterclass-ourworks__hiddengallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    row-gap: 1.5rem;
+}
+.masterclass-ourworks__img {
+    height: 300px;
+    width: 260px;
+    object-fit: fill;
+}
+.masterclass-ourworks__caption {
+    font-weight: 400;
+}
+.masterclass-ourworks__hiddengallery, input[type="checkbox"] {
+    display: none;
+}
+.masterclass-ourworks__button {
+    display: block;
+    width: fit-content;
+    margin: 3rem auto 4rem;
+}
+
+/*---------------Masterclass-techniques---------------*/
+.masterclass-techniques__marker {
+    float: left;
+    width: 3.75rem;
+    height: 3.75rem;
+    box-sizing: border-box;
+    padding-top: 1rem;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    margin-left: 30%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #F6F6F6;
+    background-color: #A1B29F;
+    border-radius: 50%;
+}
+.masterclass-techniques__item {
+    line-height: 7rem;
+    
+}
+/*---------------Masterclass-restoration---------------*/
+.masterclass-restoration__gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1.5rem;
+    justify-items: center;
+}
+.masterclass-restoration__img {
+    height: 251px;
+    width: 207px;
+    object-fit: contain;
+}
+
+
+/*---------------Masterclass-secondlife---------------*/
+.masterclass-secondlife {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 404px;
+    align-items: center;
+    background-image: url(/assets/images/masterclass/masterclass_secondlife.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.masterclass-secondlife__text {
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.7em;
+    line-height: 150%;
+    font-family: 'Tenor Sans', sans-serif;
+    text-align: center;
+    color: #F6F6F6;
+}
+
+/*---------------Masterclass-joinery---------------*/
+.masterclass-joinery__container {
+    display: grid;
+    width: 100vw;
+    height: 80vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 90% 10%;
+    justify-items: center;
+}
+.masterclass-joinery__img {
+    height: 100%;
+    grid-row: 1/2;
+}
+.masterclass-joinery__caption {
+    grid-row: 2/3;
+}
+
+/*---------------Masterclass-tutorial---------------*/
+.masterclass-tutorial {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 40% 40% 20%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    justify-items: left;
+    align-items: center;
+}
+.masterclass-tutorial__title {
+    grid-area: 1/1/2/2;
+}
+.masterclass-tutorial__text {
+    grid-area: 2/1/3/2;
+    align-self: center;
+}
+.masterclass-tutorial__img {
+    grid-area: 1/2/4/3;
+    height: 100%;
+    justify-self: center;
+    object-fit: contain;
+}
+.masterclass-tutorial__button {
+    grid-area: 3/1/4/2;
+}
+
+
+/*---------------Footer---------------*/
+
+.footer {
+    background: #715B4B;
+    min-height: 40vh;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10vh;
+}
+
+.footer__text {
+    margin: 0;
+    font-size: 0.9em;
+    color: #F6F6F6;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__link {
+    font-size: 0.9em;
+    color: #F6F6F6;
+}
+
+.footer__socials {
+    display: flex;
+}
+
+.footer__social {
+    margin-left: 1.5vw;
+}
