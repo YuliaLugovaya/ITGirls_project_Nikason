@@ -15,7 +15,7 @@ html, body {
     margin: 0 auto;
 }
 
-h2, h3 {
+h1, h2, h3 {
     font-family: 'Tenor Sans', sans-serif;
     font-weight: lighter;
     color: #57463A;
@@ -105,6 +105,29 @@ h2 {
 
 .hamburger__icon {
     display: none;
+}
+
+/*---------------index-welcome-------------*/
+
+.index-welcome {
+    border-bottom: solid 1px #000000;
+}
+
+.index-welcome__container {
+    display: flex;
+}
+
+.index-welcome__photo {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.index-welcome__paragraph {
+    font-size: smaller;
+}
+
+.index-welcome__socials {
+    align-self: flex-end;
 }
 
 /*---------------index-about---------------*/
