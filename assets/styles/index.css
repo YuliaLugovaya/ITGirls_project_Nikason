@@ -2,7 +2,7 @@ html, body {
     height: 100%;
 }
 
-body {
+.wrapper {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -15,7 +15,7 @@ body {
     margin: 0 auto;
 }
 
-h2, h3 {
+h1, h2, h3 {
     font-family: 'Tenor Sans', sans-serif;
     font-weight: lighter;
     color: #57463A;
@@ -50,6 +50,84 @@ h2 {
     padding: 2.5em;
     font-size: 1em;
     line-height: 1.5em;
+}
+
+/*---------------Header---------------*/
+
+.header {
+    min-width: 15vh;
+    border-bottom: 1px solid #000000;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.header__nav-left, .header__nav-right {
+    width: 45vw;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.header__nav-left {
+    display: flex;
+}
+
+.header__nav-right {
+    display: flex;
+    justify-content: end;
+}
+
+.header__link-left {
+    margin-right: 5vw;
+    font-size: 0.9em;
+    color: #323232;
+}
+
+.header__link-right {
+    margin-left: 5vw;
+    font-size: 0.9em;
+    color: #323232;
+}
+
+.header__link-left:hover, .header__link-right:hover {
+    text-decoration: underline;
+}
+
+.hamburger__icon {
+    display: none;
+}
+
+/*---------------index-welcome-------------*/
+
+.index-welcome {
+    border-bottom: solid 1px #000000;
+}
+
+.index-welcome__container {
+    display: flex;
+}
+
+.index-welcome__photo {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.index-welcome__paragraph {
+    font-size: smaller;
+}
+
+.index-welcome__socials {
+    align-self: flex-end;
 }
 
 /*---------------index-about---------------*/
@@ -128,13 +206,12 @@ h2 {
 
 .index-quality__text {
     margin: 4% 10% 2% 10%;
+    padding: 0;
     font-size: 1.5em;
-    font-weight: 300;
-    line-height: 150%;
 }
 
 .index-quality__image {
-    margin-left: 83%;
+    margin-left: 70%;
     margin-bottom: 2%;
     width: 10em;
 }
