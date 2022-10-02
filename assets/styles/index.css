@@ -42,15 +42,7 @@ h2 {
     border: none;
 }
 
-[class*="__text"] {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-    padding: 2.5em;
-    font-size: 1em;
-    line-height: 1.5em;
-}
+
 
 /*---------------Header---------------*/
 
@@ -110,16 +102,24 @@ h2 {
 /*---------------index-welcome-------------*/
 
 .index-welcome {
-    border-bottom: solid 1px #000000;
-}
-
-.index-welcome__container {
     display: flex;
+    justify-content: center;
+    border-bottom: solid 1px #000000;
 }
 
 .index-welcome__photo {
     max-width: 100%;
     object-fit: cover;
+}
+
+.index-welcome__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 2.5em;
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
 .index-welcome__paragraph {
@@ -135,7 +135,6 @@ h2 {
 .index-brand__container {
     padding-bottom: 15vh;
     padding-top: 15vh;
-
 }
 
 .index-brand__title {
@@ -161,7 +160,6 @@ h2 {
     flex-wrap: wrap;
     margin-top: 10vh;
     margin-bottom: 10vh;
-
 }
 
 .index-production__item {
@@ -190,6 +188,7 @@ h2 {
 
 .index-about__info {
     display: flex;
+    justify-content: center;
 }
 
 .index-about__photo {
@@ -197,7 +196,18 @@ h2 {
     object-fit: cover;
 }
 
+.index-about__photo, .index-about__text {
+    width: 40vw;
+}
+
 .index-about__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 2.5em;
+    font-size: 1em;
+    line-height: 1.5em;
     background: #EBEEEB;
 }
 
@@ -219,11 +229,22 @@ h2 {
 }
 
 .index-services__photo {
-    width: 30vw;
+    width: 50vw;
+}
+
+.index-services__text, .index-services__text_workshop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2.5em;
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
 .index-services__text {
     background: #E3DACE;
+    width: 50vw;
 }
 
 .index-services__text_workshop {
@@ -260,6 +281,7 @@ h2 {
     margin: 4% 10% 2% 10%;
     padding: 0;
     font-size: 1.5em;
+    line-height: 1.5em;
 }
 
 .index-quality__image {
