@@ -130,6 +130,58 @@ h2 {
     align-self: flex-end;
 }
 
+/*---------------index-brand---------------*/
+
+.index-brand__container {
+    padding-bottom: 15vh;
+    padding-top: 15vh;
+
+}
+
+.index-brand__title {
+    margin-top: 0;
+}
+
+.index-brand__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw;  
+}
+
+.index-brand__item {
+    width: 25vw;
+    text-align: center;
+    border-bottom: solid 3px #715B4B;
+}
+
+/*---------------index-production---------------*/
+
+.index-production__table {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+
+}
+
+.index-production__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    width: 280px;
+    height: 240px;
+    border: 1px solid black;
+}
+
+.index-production__text {
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 102.99%;
+    color: #323232;
+}
+
 /*---------------index-about---------------*/
 
 .index-about__title {
@@ -255,4 +307,24 @@ h2 {
 
 .footer__social {
     margin-left: 1.5vw;
+}
+
+/*---------------PAGES PRIVACY AND OFFER---------------*/
+
+.privacy, .offer {
+    background: white;
+}
+
+.privacy__title, .offer__title {
+    padding-top: 15vh;
+    margin-top: 0;
+    line-height: 120%;
+}
+
+.privacy__text, .offer__text {
+    padding-top: 10vh;
+    padding-bottom: 15vh;
+    margin-bottom: 0;
+    margin-top: 0;
+    
 }
