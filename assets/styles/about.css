@@ -208,7 +208,8 @@ a {
 .about-philosophy__text {
     text-align: end;
     margin-top: 0;
-    line-height: 50%;
+    margin-bottom: 0;
+    line-height: 150%;
     font-size: 1.5em;
 }
 
@@ -228,6 +229,7 @@ a {
 
 .about-media__image {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     height: 60vh;
@@ -241,8 +243,8 @@ a {
 }
 
 .about-media__img:hover { 
-    width: 50vh; 
-    cursor: pointer
+    width: 20vw; 
+    cursor: pointer;
 }
 
 /*---------------About-contact---------------*/
@@ -321,7 +323,50 @@ a {
 
 /*---------------Медиазапросы---------------*/
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 992px){
+
+    .about-media__image {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .about-media__img {
+        width: 50vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+
+    .about-media__img:hover { 
+        width: 70vw; 
+        cursor: pointer;
+    }
+    
+    .about-founder__container {
+        flex-direction: column;
+        margin-bottom: 10vh;
+    }
+
+    .about-founder__content {
+        margin-top: 5vw;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__info {
+        margin-bottom: 3vh;
+    }
+
+    .footer__socials {
+        margin-top: 5vh;
+    }
+
+}
+
+@media screen and (max-width: 768px){
 
     .header {
         border: none;
