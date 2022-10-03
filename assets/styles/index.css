@@ -30,8 +30,8 @@ h1, h2 {
 }
 
 h2 {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 10vh;
+    padding-bottom: 3vh;
 }
 
 a {
@@ -214,10 +214,6 @@ a {
 
 /*---------------index-about---------------*/
 
-.index-about__title {
-    text-align: center;
-}
-
 .index-about__info {
     display: flex;
     justify-content: center;
@@ -249,6 +245,11 @@ a {
 }
 
 /*---------------index-video---------------*/
+
+.index-video__container {
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+}
 
 .index-video__video {
     max-width: 100%;
