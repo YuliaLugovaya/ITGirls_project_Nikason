@@ -20,6 +20,8 @@ body {
 [class*="__container"]{
     max-width: 1160px;
     margin: 0 auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 [class*="__image"]{
