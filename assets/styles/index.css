@@ -6,6 +6,8 @@ html, body {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
+    font-size: 1.1em;
+    line-height: 150%;
     color: #000;
     background: #f3efea;
 }
@@ -17,23 +19,33 @@ html, body {
 
 h1, h2, h3 {
     font-family: 'Tenor Sans', sans-serif;
+    font-style: normal;
     font-weight: lighter;
     color: #57463A;
 }
 
+h1, h2 {
+    font-weight: 400;
+    font-size: 2.7em;
+}
+
 h2 {
-    font-size: 2.5em;
-    margin: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+a {
+    text-decoration: none;
 }
 
 .button {
     background: #A1B29F;
     color: #F6F6F6;
     border: none;
-    text-decoration: none;
     padding: 18px 56px;
     margin-top: 2em;
     text-align: center;
+    transition: 0.5s;
 }
 
 .button:hover {
@@ -41,8 +53,6 @@ h2 {
     cursor: pointer;
     border: none;
 }
-
-
 
 /*---------------Header---------------*/
 
@@ -103,31 +113,53 @@ h2 {
 
 .index-welcome {
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     border-bottom: solid 1px #000000;
 }
 
+.index-welcome__photo, .index-welcome__text {
+    width: 50vw;
+}
+
 .index-welcome__photo {
-    max-width: 100%;
+    max-width: 50%;
     object-fit: cover;
+}
+
+.index-welcome__title {
+    line-height: 120%;
 }
 
 .index-welcome__text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-around;
-    padding: 2.5em;
+    justify-content: center;
+    margin-left: 5vh;
+    margin-right: 25vh;
     font-size: 1em;
     line-height: 1.5em;
+    max-width: 50%;
+    color: #323232;
 }
 
 .index-welcome__paragraph {
+    margin-bottom: 0;
     font-size: smaller;
+    line-height: 150%;
+    color: #323232;
+}
+
+.index-welcome__slogan {
+    margin-bottom: 10vh;
 }
 
 .index-welcome__socials {
-    align-self: flex-end;
+    margin-top: 15vh;
+}
+
+.index-welcome__social {
+    margin-left: 2vh;
 }
 
 /*---------------index-brand---------------*/
@@ -197,7 +229,7 @@ h2 {
 }
 
 .index-about__photo, .index-about__text {
-    width: 40vw;
+    width: 50vw;
 }
 
 .index-about__text {
