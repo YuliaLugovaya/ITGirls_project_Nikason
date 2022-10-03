@@ -2,7 +2,7 @@ html, body {
     height: 100%;
 }
 
-body {
+.wrapper {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -15,7 +15,7 @@ body {
     margin: 0 auto;
 }
 
-h2, h3 {
+h1, h2, h3 {
     font-family: 'Tenor Sans', sans-serif;
     font-weight: lighter;
     color: #57463A;
@@ -42,7 +42,77 @@ h2 {
     border: none;
 }
 
-[class*="__text"] {
+
+
+/*---------------Header---------------*/
+
+.header {
+    min-width: 15vh;
+    border-bottom: 1px solid #000000;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.header__nav-left, .header__nav-right {
+    width: 45vw;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.header__nav-left {
+    display: flex;
+}
+
+.header__nav-right {
+    display: flex;
+    justify-content: end;
+}
+
+.header__link-left {
+    margin-right: 5vw;
+    font-size: 0.9em;
+    color: #323232;
+}
+
+.header__link-right {
+    margin-left: 5vw;
+    font-size: 0.9em;
+    color: #323232;
+}
+
+.header__link-left:hover, .header__link-right:hover {
+    text-decoration: underline;
+}
+
+.hamburger__icon {
+    display: none;
+}
+
+/*---------------index-welcome-------------*/
+
+.index-welcome {
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 1px #000000;
+}
+
+.index-welcome__photo {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.index-welcome__text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -50,6 +120,64 @@ h2 {
     padding: 2.5em;
     font-size: 1em;
     line-height: 1.5em;
+}
+
+.index-welcome__paragraph {
+    font-size: smaller;
+}
+
+.index-welcome__socials {
+    align-self: flex-end;
+}
+
+/*---------------index-brand---------------*/
+
+.index-brand__container {
+    padding-bottom: 15vh;
+    padding-top: 15vh;
+}
+
+.index-brand__title {
+    margin-top: 0;
+}
+
+.index-brand__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw;  
+}
+
+.index-brand__item {
+    width: 25vw;
+    text-align: center;
+    border-bottom: solid 3px #715B4B;
+}
+
+/*---------------index-production---------------*/
+
+.index-production__table {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.index-production__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    width: 280px;
+    height: 240px;
+    border: 1px solid black;
+}
+
+.index-production__text {
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 102.99%;
+    color: #323232;
 }
 
 /*---------------index-about---------------*/
@@ -60,6 +188,7 @@ h2 {
 
 .index-about__info {
     display: flex;
+    justify-content: center;
 }
 
 .index-about__photo {
@@ -67,7 +196,18 @@ h2 {
     object-fit: cover;
 }
 
+.index-about__photo, .index-about__text {
+    width: 40vw;
+}
+
 .index-about__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 2.5em;
+    font-size: 1em;
+    line-height: 1.5em;
     background: #EBEEEB;
 }
 
@@ -89,11 +229,22 @@ h2 {
 }
 
 .index-services__photo {
-    width: 30vw;
+    width: 50vw;
+}
+
+.index-services__text, .index-services__text_workshop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2.5em;
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
 .index-services__text {
     background: #E3DACE;
+    width: 50vw;
 }
 
 .index-services__text_workshop {
@@ -128,13 +279,13 @@ h2 {
 
 .index-quality__text {
     margin: 4% 10% 2% 10%;
+    padding: 0;
     font-size: 1.5em;
-    font-weight: 300;
-    line-height: 150%;
+    line-height: 1.5em;
 }
 
 .index-quality__image {
-    margin-left: 83%;
+    margin-left: 70%;
     margin-bottom: 2%;
     width: 10em;
 }
@@ -178,4 +329,24 @@ h2 {
 
 .footer__social {
     margin-left: 1.5vw;
+}
+
+/*---------------PAGES PRIVACY AND OFFER---------------*/
+
+.privacy, .offer {
+    background: white;
+}
+
+.privacy__title, .offer__title {
+    padding-top: 15vh;
+    margin-top: 0;
+    line-height: 120%;
+}
+
+.privacy__text, .offer__text {
+    padding-top: 10vh;
+    padding-bottom: 15vh;
+    margin-bottom: 0;
+    margin-top: 0;
+    
 }
