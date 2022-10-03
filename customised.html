@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/styles/customised.css">
     <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/customised.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Tenor+Sans&display=swap"
@@ -25,7 +25,7 @@
                     <a class="header__link-left" href="./masterclass.html">Мастер-классы</a>
                     <a class="header__link-left" href="./customised.html">Мебель на заказ</a>
                 </nav>
-                <a class="logo" href="./index.html"><img src="./assets/images/icon.svg" alt="Логотип" /></a>
+                <a class="logo" href="./index.html"><img src="./assets/images/icon.svg" alt="Логотип"></a>
                 <nav class="header__nav-right">
                     <a class="header__link-right" href="#contact">Контакты</a>
                     <a class="header__link-right" href="./about.html">О нас</a>
@@ -33,13 +33,13 @@
             </div>
             <nav class="hamburger">
                 <div class="hamburger__icon">
-                    <input type="checkbox" />
+                    <input type="checkbox">
                     <span></span>
                     <span></span>
                     <span></span>
                     <div class="hamburger__menu">
                         <div class="hamburger__link">
-                            <a href="./mastermind.html">Мастер-классы</a>
+                            <a href="./masterclass.html">Мастер-классы</a>
                         </div>
                         <div class="hamburger__link">
                             <a href="./customised.html">Мебель на заказ</a>
@@ -54,13 +54,10 @@
         </header>
         <main class="main">
             <section class="customised-head">
-                <div class="customised-head__container">
-                    <img class="background-image" src="./assets/images/customized/customized_head.png" alt="background">
-                    <p class="customised-head__title-top">Воплотим вашу любую задумку в реальность</p>
-                    <h1 class="customised-head__title-middle">Столярная мастерская</h1>
-                    <h2 class="customised-head__title-bottom">NIKASON BRAND</h2>
-                    <a class="button_white" href="#order-furniture">Заказать мебель</a>
-                </div>
+                <p class="customised-head__subtitle-top">Воплотим вашу любую задумку в реальность</p>
+                <h1 class="customised-head__title-middle">Столярная мастерская</h1>
+                <h2 class="customised-head__title-bottom">NIKASON BRAND</h2>
+                <a class="button_white" href="#order-furniture">Заказать мебель</a>
             </section>
             <section class="customised-choice">
                 <h2 class="customised-choice__title">Почему выбирают нас</h2>
@@ -95,25 +92,7 @@
             <section class="portfolio">
                 <h2 class="portfolio-title">Портфолио</h2>
                 <div class="portfolio__container">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                                aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                                aria-label="Slide 5"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                                aria-label="Slide 6"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
-                                aria-label="Slide 7"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
-                                aria-label="Slide 8"></button>
-                        </div>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="./assets/images/customized/customized_portfolio1.png" class="d-block w-100"
@@ -148,12 +127,12 @@
                                     alt="портфолио8">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Предыдущий</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
                             data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Следующий</span>
@@ -161,7 +140,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="production">
                 <h2 class="production__title">Этапы производства</h2>
                 <div class="production__container">
@@ -208,18 +186,17 @@
                     </div>
                 </div>
             </section>
-        </main>
-        <section class="about-contact">
-            <div class="about-contact__container">
-                <p><a name="order-furniture"></a></p>
-                <h2 class="about-contact__title">
-                    Оставьте заявку, и мы с вами свяжемся
-                </h2>
-                <div class="about-contact__button">
-                    <a class="button" href="https://www.whatsapp.com/?lang=ru">Оставить заявку</a>
+            <section class="about-contact">
+                <div class="about-contact__container">
+                    <p><a name="order-furniture"></a></p>
+                    <h2 class="about-contact__title">
+                        Оставьте заявку, и мы с вами свяжемся
+                    </h2>
+                    <div class="about-contact__button">
+                        <a class="button" href="https://www.whatsapp.com/?lang=ru">Оставить заявку</a>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
         </main>
         <footer class="footer">
             <a id="contact"></a>
@@ -242,9 +219,9 @@
                 </div>
                 <div class="footer__socials">
                     <a class="footer__social" href="https://telegram.org/"><img src="./assets/images/telegram-icon.svg"
-                            alt="Telegram" /></a>
+                            alt="Telegram"></a>
                     <a class="footer__social" href="https://www.whatsapp.com/?lang=ru"><img
-                            src="./assets/images/whatsup-icon.svg" alt="WhatsUp" /></a>
+                            src="./assets/images/whatsup-icon.svg" alt="WhatsUp"></a>
                 </div>
             </div>
         </footer>
