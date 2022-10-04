@@ -293,13 +293,14 @@ a {
 
 /*--------------index-quality--------------*/
 
-.index-quality {
+.index-quality__container {
     border: solid 7px;
     border-color: #A1B29F;
     max-width: 1160px;
     margin: 10vh auto;
+    padding: 0;
 }
-.index-quality__container {
+.index-quality__wrapper {
     border: solid 1px;
     border-color: #715B4B;
     margin: 5px;
@@ -574,9 +575,28 @@ a {
     max-width: 100%;
 }
 
-    .footer__container {
-        flex-direction: column;
-    }
+.index-quality__container {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.index-quality__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.index-quality__title-top, .index-quality__title-bottom {
+    padding: 0;
+}
+
+.index-quality__image {
+    margin: 1%;
+    align-self: flex-end;
+}
+
+.footer__container {
+    flex-direction: column;
+}
 
     .footer__info {
         margin-bottom: 5vh;
