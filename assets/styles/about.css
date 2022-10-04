@@ -17,9 +17,11 @@ body {
     margin: 0 auto;
 }
 
-[class*="__container"]{
+[class*="__container"] {
     max-width: 1160px;
     margin: 0 auto;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 [class*="__image"]{
@@ -124,6 +126,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .about-head__title-top, .about-head__title-bottom {
@@ -239,13 +243,7 @@ a {
     width: 17vw; 
     padding-left: 1vw;
     padding-right: 1vw;
-    /*transition: width 0.5s ease;*/
 }
-
-/*.about-media__img:hover { 
-    width: 20vw; 
-    cursor: pointer;
-}*/
 
 /*---------------About-contact---------------*/
 
@@ -283,7 +281,7 @@ a {
     text-decoration: underline;
 }
 
-.footer__links {
+.footer__links, .footer__documents {
     display: flex;
     flex-direction: column;
 }
@@ -333,19 +331,22 @@ a {
 
     .about-media__img {
         width: 70vw;
-        padding-top: 1vw;
-        padding-bottom: 1vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
     }
     
     .about-founder__container {
         flex-direction: column;
         margin-bottom: 10vh;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .about-founder__content {
         margin-top: 5vw;
-        padding-left: 2vw;
-        padding-right: 2vw;
+        padding-left: 35px;
+        padding-right: 35px;
+        margin-left: 0;
     }
 
     .about-founder__text, .about-founder__subtitle {
@@ -354,15 +355,13 @@ a {
 
     .footer__container {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
     }
 
     .footer__info {
         margin-bottom: 5vh;
     }
 
-    .footer__socials {
+    .footer__documents, .footer__socials {
         margin-top: 5vh;
     }
 
@@ -372,6 +371,10 @@ a {
         margin-bottom: 1vh;
     }
 
+    .footer__social {
+        margin-left: 0;
+        margin-right: 3vw;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -391,13 +394,12 @@ a {
     .hamburger__icon {
         display: block;
         position: relative;
-        /*top: 50px;*/
-        /*left: 50px;*/
         z-index: 1;
         -webkit-user-select: none;
         user-select: none;
         margin-left: 5vw;
-        margin-top: 5vw;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
     }
     
     .hamburger__icon a {
