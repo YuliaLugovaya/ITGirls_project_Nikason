@@ -17,7 +17,7 @@ body {
     margin: 0 auto;
 }
 
-[class*="__container"]{
+[class*="__container"] {
     max-width: 1160px;
     margin: 0 auto;
     padding-left: 35px;
