@@ -508,9 +508,15 @@ a {
         flex-direction: column-reverse;
     }
 
-    .index-welcome__photo, .index-welcome__text {
+    .index-welcome__photo {
         width: 100vw;
         max-width: 100%;
+    }
+
+    .index-welcome__text {
+        max-width: 90vw;
+        width: 90vw;
+        margin-left: 35px;
     }
 
     .index-welcome__slogan {
@@ -524,10 +530,11 @@ a {
     .index-brand__items {
         flex-direction: column;
         align-items: center;
+        gap: 3vh;
     }
 
     .index-brand__item {
-        width: 60vw;
+        width: 80vw;
     }
 
     .index-brand__container {
@@ -555,6 +562,10 @@ a {
 
 .index-video__container {
     padding: 0;
+}
+
+.index-video__title {
+    margin-left: 35px;
 }
 
 .index-services__text {
