@@ -2,12 +2,11 @@ html, body {
     height: 100%;
 }
 
-.wrapper {
+body {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 1.1em;
-    line-height: 150%;
     color: #000;
     background: #f3efea;
 }
@@ -15,6 +14,8 @@ html, body {
 [class*="__container"]{
     max-width: 1160px;
     margin: 0 auto;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 h1, h2, h3 {
@@ -135,8 +136,8 @@ a {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-left: 5vh;
-    margin-right: 25vh;
+    margin-left: 3vw;
+    margin-right: 25vw;
     font-size: 1em;
     line-height: 1.5em;
     max-width: 50%;
@@ -239,6 +240,10 @@ a {
     background: #EBEEEB;
 }
 
+.index-about__paragraph {
+    width: 50%;
+}
+
 .index-about__paragraph_bold {
     font-weight: bolder;
     margin-top: 10%;
@@ -288,13 +293,14 @@ a {
 
 /*--------------index-quality--------------*/
 
-.index-quality {
+.index-quality__container {
     border: solid 7px;
     border-color: #A1B29F;
     max-width: 1160px;
     margin: 10vh auto;
+    padding: 0;
 }
-.index-quality__container {
+.index-quality__wrapper {
     border: solid 1px;
     border-color: #715B4B;
     margin: 5px;
@@ -345,7 +351,7 @@ a {
     text-decoration: underline;
 }
 
-.footer__links {
+.footer__links, .footer__documents {
     display: flex;
     flex-direction: column;
 }
@@ -357,6 +363,7 @@ a {
 
 .footer__socials {
     display: flex;
+    margin-bottom: 5vh;
 }
 
 .footer__social {
@@ -401,13 +408,12 @@ a {
     .hamburger__icon {
         display: block;
         position: relative;
-        /*top: 50px;*/
-        /*left: 50px;*/
         z-index: 1;
         -webkit-user-select: none;
         user-select: none;
         margin-left: 5vw;
-        margin-top: 5vw;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
     }
     
     .hamburger__icon a {
@@ -431,6 +437,7 @@ a {
         opacity: 0; 
         z-index: 2; 
         -webkit-touch-callout: none;
+        
     }
     
     .hamburger__icon span {
@@ -493,23 +500,46 @@ a {
     .hamburger__link {
         margin: 5vh 0;
     }
+}
 
-    .about-figures__container {
-        flex-direction: column;
-    }
+@media screen and (max-width: 992px){
 
     .index-welcome {
         flex-direction: column-reverse;
     }
 
-    .index-welcome__photo, .index-welcome__text {
+    .index-welcome__photo {
         width: 100vw;
         max-width: 100%;
     }
 
+    .index-welcome__text {
+        max-width: 90vw;
+        width: 90vw;
+        margin-left: 35px;
+    }
+
+    .index-welcome__slogan {
+        margin-bottom: 0;
+    }
+
+    .index-welcome__socials {
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+    }
     .index-brand__items {
         flex-direction: column;
         align-items: center;
+        gap: 3vh;
+    }
+
+    .index-brand__item {
+        width: 80vw;
+    }
+
+    .index-brand__container {
+        padding-bottom: 0;
+        padding-top: 0;
     }
 
     .index-about__info {
@@ -521,6 +551,32 @@ a {
     max-width: 100%;
 }
 
+.index-about__text {
+    padding-left: 35px;
+    margin-right: 35px;
+}
+
+.index-about__paragraph {
+    width: 90%;
+}
+
+.index-video__container {
+    padding: 0;
+}
+
+.index-video__title {
+    margin-left: 35px;
+}
+
+.index-services__text {
+    padding-left: 35px;
+    margin-right: 35px;
+}
+
+.index-services__paragraph {
+    width: 90%;
+}
+
 .index-services__product-card {
     flex-direction: column;
 }
@@ -529,21 +585,35 @@ a {
     width: 100vw;
     max-width: 100%;
 }
+
+.index-quality__container {
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
-@media screen and (max-width: 992px){
+.index-quality__wrapper {
+    display: flex;
+    flex-direction: column;
+}
 
-    .footer__container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+.index-quality__title-top, .index-quality__title-bottom {
+    padding: 0;
+}
+
+.index-quality__image {
+    margin: 1%;
+    align-self: flex-end;
+}
+
+.footer__container {
+    flex-direction: column;
+}
 
     .footer__info {
         margin-bottom: 5vh;
     }
 
-    .footer__socials {
+    .footer__documents, .footer__socials {
         margin-top: 5vh;
     }
 
@@ -551,5 +621,10 @@ a {
         font-size: 1.3em;
         margin-top: 1vh;
         margin-bottom: 1vh;
+    }
+
+    .footer__social {
+        margin-left: 0;
+        margin-right: 3vw;
     }
 }
