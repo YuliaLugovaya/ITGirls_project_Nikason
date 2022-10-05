@@ -640,7 +640,8 @@ a {
 
     .choice__name {
         font-size: 1em;
-        width: 70vw;
+        width: 70%;
+        height: 10%;
         font-weight: 700;
     }
 }
@@ -659,6 +660,16 @@ a {
         padding-bottom: 2vw;
     }
 
+    .choice__name {
+        width: 80%;
+        /*height: 40%;*/
+        padding-bottom: 2em;
+    }
+
+    .choice__text {
+        padding-bottom: 2em;
+    }
+
     .reviews__title {
         padding-top: 3em;
         padding-bottom: 1em;
@@ -672,8 +683,8 @@ a {
 
     .reviews__img {
         width: 50vw;
-        padding-top: 2vw;
-        padding-bottom: 2vw;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
     }
 
     .step__text {
@@ -709,10 +720,12 @@ a {
 @media screen and (max-width: 390px) {
     [class*="__title"] {
         font-size: 2em;
+        padding-bottom: 1vh;
     }
 
     .choice__name {
         font-size: 0.9em;
         font-weight: 700;
+        width: 80%;
     }
 }
