@@ -379,6 +379,10 @@ a {
 
 @media screen and (max-width: 768px){
 
+    [class*="__title"]{
+        font-size: 2em;
+    }
+
     .header {
         border: none;
     }
