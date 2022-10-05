@@ -42,6 +42,7 @@ a {
 .button {
     background: #A1B29F;
     color: #F6F6F6;
+    font-weight: 700;
     border: none;
     padding: 18px 56px;
     margin-top: 2em;
@@ -393,6 +394,10 @@ a {
 
 @media screen and (max-width: 768px){
 
+    h1, h2 {
+        font-size: 2em;
+    }
+
     .header {
         border: none;
     }
@@ -516,7 +521,12 @@ a {
     .index-welcome__text {
         max-width: 90vw;
         width: 90vw;
+        margin: 0;
+    }
+
+    .index-welcome__paragraph, .index-welcome__slogan, .index-welcome__title, .index-welcome__button, .index-welcome__socials {
         margin-left: 35px;
+        margin-right: 35px;
     }
 
     .index-welcome__slogan {
@@ -524,9 +534,15 @@ a {
     }
 
     .index-welcome__socials {
-        margin-top: 10vh;
+        margin-top: 8vh;
         margin-bottom: 5vh;
     }
+
+    .index-welcome__social {
+        margin-left: 0;
+        margin-right: 2vh;
+    }
+
     .index-brand__items {
         flex-direction: column;
         align-items: center;
@@ -552,12 +568,17 @@ a {
 }
 
 .index-about__text {
-    padding-left: 35px;
-    margin-right: 35px;
+    padding: 0;
+    background: #f3efea;
 }
 
 .index-about__paragraph {
-    width: 90%;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.index-about__button {
+    margin-left: 35px;
 }
 
 .index-video__container {
@@ -569,12 +590,16 @@ a {
 }
 
 .index-services__text {
-    padding-left: 35px;
+    padding: 0;
+}
+
+.index-services__title-secondary, .index-services__paragraph, .index-services__button {
+    margin-left: 35px;
     margin-right: 35px;
 }
 
-.index-services__paragraph {
-    width: 90%;
+.index-services__button {
+    margin-bottom: 3vh;
 }
 
 .index-services__product-card {
