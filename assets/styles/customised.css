@@ -184,8 +184,9 @@ a {
     border-bottom: 1px black solid;
     width: 22vw;
     padding-bottom: 1em;
+    padding-top: 1em;
     font-size: 1em;
-    font-weight: bolder;
+    font-weight: 700;
     color: #323232;
 
 }
@@ -383,10 +384,6 @@ a {
     padding-bottom: 8vh;
 }
 
-/*.reviews__container {
-    margin-top: 15vh;
-    margin-left: 5vw;
-}*/
 
 .reviews__image {
     display: flex;
@@ -640,6 +637,12 @@ a {
     .portfolio__title {
         padding-top: 10vh;
     }
+
+    .choice__name {
+        font-size: 1em;
+        width: 70vw;
+        font-weight: 700;
+    }
 }
 
 
@@ -652,8 +655,6 @@ a {
 
     .carousel {
         flex-direction: column;
-        /*height: 70vh;
-        width: 80vw;*/
         padding-top: 2vw;
         padding-bottom: 2vw;
     }
@@ -708,5 +709,10 @@ a {
 @media screen and (max-width: 390px) {
     [class*="__title"] {
         font-size: 2em;
+    }
+
+    .choice__name {
+        font-size: 0.9em;
+        font-weight: 700;
     }
 }
