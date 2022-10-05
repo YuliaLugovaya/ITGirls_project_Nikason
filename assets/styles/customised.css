@@ -22,6 +22,8 @@ body {
 [class*="__container"] {
     max-width: 1160px;
     margin: 0 auto;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 a {
@@ -172,13 +174,12 @@ a {
     justify-content: start;
     max-width: 100vw;
     margin: 0 auto;
-    /*grid-template-columns: 1fr 1fr 1fr;*/
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: 1fr 1fr;
 
 }
 
-.choice__titles {
+.choice__name {
     font-family: 'Open Sans', sans-serif;
     border-bottom: 1px black solid;
     width: 22vw;
@@ -530,6 +531,7 @@ a {
         user-select: none;
         margin-left: 5vw;
         margin-top: 5vw;
+        margin-bottom: 5vh;
     }
 
     .hamburger__icon a {
@@ -620,29 +622,61 @@ a {
     .customised-head {
         max-width: 100%;
     }
+
+    .customised-choice__title {
+        padding-top: 10vh;
+        padding-bottom: 3vh;
+    }
+
+    .customised-choice__items {
+        padding-top: 2em;
+    }
+
+    .reviews__title {
+        padding-top: 10vh;
+        padding-bottom: 2vh;
+    }
+
+    .portfolio__title {
+        padding-top: 10vh;
+    }
 }
+
 
 @media screen and (max-width: 992px) {
 
+    .customised-choice__title {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
 
     .carousel {
         flex-direction: column;
-        height: 70vh;
-        width: 80vw;
+        /*height: 70vh;
+        width: 80vw;*/
         padding-top: 2vw;
         padding-bottom: 2vw;
     }
 
+    .reviews__title {
+        padding-top: 3em;
+        padding-bottom: 1em;
+    }
 
     .reviews__image {
         flex-direction: column;
         height: 100%;
+        padding-top: 1em;
     }
 
     .reviews__img {
         width: 50vw;
         padding-top: 2vw;
         padding-bottom: 2vw;
+    }
+
+    .step__text {
+        width: 13em;
     }
 
     .footer__container {
@@ -668,5 +702,11 @@ a {
     .footer__social {
         margin-left: 0;
         margin-right: 3vw;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    [class*="__title"] {
+        font-size: 2em;
     }
 }
