@@ -576,6 +576,7 @@ a {
 .index-about__paragraph {
     margin-left: 35px;
     margin-right: 35px;
+    width: 80vw;
 }
 
 .index-about__button {
