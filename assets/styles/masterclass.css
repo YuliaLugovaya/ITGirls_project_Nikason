@@ -301,22 +301,35 @@ input[type="checkbox"]:checked ~ .masterclass-ourworks__hiddengallery {
     padding-top: 10vh;
 }
 
+.footer__info {
+    display: flex;
+    flex-direction: column;
+}
+
 .footer__text {
     margin: 0;
     font-size: 0.9em;
+    font-weight: 400;
     color: #F6F6F6;
+    width: 25vw;
 }
 
 .footer__link:hover {
     text-decoration: underline;
 }
 
-.footer__links, .footer__documents {
+.footer__links,
+.footer__documents {
     display: flex;
     flex-direction: column;
 }
 
 .footer__link {
+    font-size: 0.9em;
+    color: #F6F6F6;
+}
+
+.footer__school {
     font-size: 0.9em;
     color: #F6F6F6;
 }
@@ -332,26 +345,34 @@ input[type="checkbox"]:checked ~ .masterclass-ourworks__hiddengallery {
 
 /*---------------PAGES PRIVACY AND OFFER---------------*/
 
-.privacy, .offer {
+.privacy,
+.offer {
     background: white;
 }
 
-.privacy__title, .offer__title {
+.privacy__title,
+.offer__title {
     padding-top: 15vh;
     margin-top: 0;
     line-height: 120%;
 }
 
-.privacy__text, .offer__text {
+.privacy__text,
+.offer__text {
     padding-top: 10vh;
     padding-bottom: 15vh;
     margin-bottom: 0;
     margin-top: 0;
-    
 }
 
 /*---------------Медиазапросы---------------*/
 
+@media screen and (max-width: 1127px) {
+    .masterclass-ourworks__img {
+        height: 16.75rem;
+        width: 14.25rem;
+    }
+}
 @media screen and (max-width: 992px) {
     
     [class*="__container"]{
@@ -395,22 +416,28 @@ input[type="checkbox"]:checked ~ .masterclass-ourworks__hiddengallery {
         margin-bottom: 5vh;
     }
     
-    .footer__documents, .footer__socials {
+    .footer__documents,
+    .footer__socials {
         margin-top: 5vh;
     }
     
-    .footer__text, .footer__link {
+    .footer__text,
+    .footer__link {
         font-size: 1.3em;
         margin-top: 1vh;
         margin-bottom: 1vh;
+    }
+    
+    .footer__text {
+        width: 70vw;
     }
     
     .footer__social {
         margin-left: 0;
         margin-right: 3vw;
     }
-    
 }
+
 
 @media screen and (max-width: 768px) {
     
