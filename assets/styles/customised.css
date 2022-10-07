@@ -579,6 +579,12 @@ a {
 
 /*---------------------------media-query-------------------------*/
 
+@media screen and (min-width: 1024px) {
+    .choice__name {
+        width: 90%;
+    }
+}
+
 @media screen and (min-width: 993px) {
     .review-carousel {
         display: none;
