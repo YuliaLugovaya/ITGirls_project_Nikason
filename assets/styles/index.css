@@ -115,7 +115,6 @@ a {
 
 .index-welcome {
     display: flex;
-    /*justify-content: center;*/
     border-bottom: solid 1px #000000;
 }
 
@@ -340,25 +339,37 @@ a {
     display: flex;
     justify-content: space-between;
     padding-top: 10vh;
-    line-height: 150%;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer__text {
     margin: 0;
     font-size: 0.9em;
+    font-weight: 400;
     color: #F6F6F6;
+    width: 25vw;
 }
 
 .footer__link:hover {
     text-decoration: underline;
 }
 
-.footer__links, .footer__documents {
+.footer__links,
+.footer__documents {
     display: flex;
     flex-direction: column;
 }
 
 .footer__link {
+    font-size: 0.9em;
+    color: #F6F6F6;
+}
+
+.footer__school {
     font-size: 0.9em;
     color: #F6F6F6;
 }
@@ -636,22 +647,28 @@ a {
     flex-direction: column;
 }
 
-    .footer__info {
-        margin-bottom: 5vh;
-    }
+.footer__info {
+    margin-bottom: 5vh;
+}
 
-    .footer__documents, .footer__socials {
-        margin-top: 5vh;
-    }
+.footer__documents,
+.footer__socials {
+    margin-top: 5vh;
+}
 
-    .footer__text, .footer__link {
-        font-size: 1.3em;
-        margin-top: 1vh;
-        margin-bottom: 1vh;
-    }
+.footer__text,
+.footer__link {
+    font-size: 1.3em;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
 
-    .footer__social {
-        margin-left: 0;
-        margin-right: 3vw;
-    }
+.footer__text {
+    width: 70vw;
+}
+
+.footer__social {
+    margin-left: 0;
+    margin-right: 3vw;
+}
 }
