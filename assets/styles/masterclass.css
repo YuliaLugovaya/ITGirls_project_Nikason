@@ -161,6 +161,7 @@ input[type="checkbox"]:checked ~ .masterclass-ourworks__hiddengallery {
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     row-gap: 1.5rem;
+    column-gap: 0.5rem;
 }
 .masterclass-ourworks__img {
     height: 18.75rem;
@@ -329,6 +330,26 @@ input[type="checkbox"]:checked ~ .masterclass-ourworks__hiddengallery {
     margin-left: 1.5vw;
 }
 
+/*---------------PAGES PRIVACY AND OFFER---------------*/
+
+.privacy, .offer {
+    background: white;
+}
+
+.privacy__title, .offer__title {
+    padding-top: 15vh;
+    margin-top: 0;
+    line-height: 120%;
+}
+
+.privacy__text, .offer__text {
+    padding-top: 10vh;
+    padding-bottom: 15vh;
+    margin-bottom: 0;
+    margin-top: 0;
+    
+}
+
 /*---------------Медиазапросы---------------*/
 
 @media screen and (max-width: 992px) {
@@ -363,9 +384,13 @@ input[type="checkbox"]:checked ~ .masterclass-ourworks__hiddengallery {
         margin-bottom: 10rem;
     }
     .small {display:none;}
+    .masterclass-tutorial__img {
+        padding-left: 0;
+    }
     .footer__container {
         flex-direction: column;
     }
+    
     .footer__info {
         margin-bottom: 5vh;
     }
@@ -396,148 +421,148 @@ input[type="checkbox"]:checked ~ .masterclass-ourworks__hiddengallery {
     .masterclass-ourworks, .masterclass-techniques, .masterclass-secondlife, .masterclass-restoration, .masterclass-joinery, .masterclass-tutorial {
         margin-top: 4rem;
     }
-
-.header {
-    border: none;
-}
-
-.header__container {
-    display: none;
-}
-
-.hamburger__icon {
-    display: block;
-} 
-
-.hamburger__icon {
-    display: block;
-    position: relative;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none;
-    margin-left: 5vw;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-}
-
-.hamburger__icon a {
-    text-decoration: none;
-    color: #323232;
-    transition: color 0.3s ease;
-}
-
-.hamburger__icon a:hover {
-    color: #505050;
-}
-
-.hamburger__icon input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-    cursor: pointer;
-    opacity: 0; 
-    z-index: 2; 
-    -webkit-touch-callout: none;
     
-}
-
-.hamburger__icon span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #57463A;
-    border-radius: 3px;
-    z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),opacity 0.55s ease;
-}
-
-.hamburger__icon span:first-child { 
-    transform-origin: 0% 0%;
-}
-
-.hamburger__icon span:nth-last-child(2) { 
-    transform-origin: 0% 100%;
-}
-
-.hamburger__icon input:checked ~ span { 
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
-}
-
-.hamburger__icon input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-.hamburger__icon input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(0, -1px);
-}
-
-.hamburger__menu { 
-    position: absolute;
-    width: 300px;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
-    background: #f3efea;
-    -webkit-font-smoothing: antialiased;
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-.hamburger__menu a {
-    font-size: 2em;
-}
-
-.hamburger__icon input:checked ~ .hamburger__menu {
-    transform: none;
-}
-
-.hamburger__link {
-    margin: 5vh 0;
-}
-
-.masterclass-main {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 58.25%, rgba(0, 0, 0, 0) 100%), url(../images/masterclass/masterclass_main_small.png);
-}
-.masterclass-main__title {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    text-align: left;
-}
-.masterclass-ourworks__gallery,
-input[type="checkbox"]:checked ~ .masterclass-ourworks__hiddengallery {
-    grid-template-columns: repeat(2, 1fr);
-}
-.masterclass-ourworks__img {
-    height: 10rem;
-    width: 8.7rem;
-}
-.masterclass-techniques__list {
+    .header {
+        border: none;
+    }
+    
+    .header__container {
+        display: none;
+    }
+    
+    .hamburger__icon {
+        display: block;
+    } 
+    
+    .hamburger__icon {
+        display: block;
+        position: relative;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+        margin-left: 5vw;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    
+    .hamburger__icon a {
+        text-decoration: none;
+        color: #323232;
+        transition: color 0.3s ease;
+    }
+    
+    .hamburger__icon a:hover {
+        color: #505050;
+    }
+    
+    .hamburger__icon input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0; 
+        z-index: 2; 
+        -webkit-touch-callout: none;
+        
+    }
+    
+    .hamburger__icon span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #57463A;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),opacity 0.55s ease;
+    }
+    
+    .hamburger__icon span:first-child { 
+        transform-origin: 0% 0%;
+    }
+    
+    .hamburger__icon span:nth-last-child(2) { 
+        transform-origin: 0% 100%;
+    }
+    
+    .hamburger__icon input:checked ~ span { 
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+    }
+    
+    .hamburger__icon input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    
+    .hamburger__icon input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+    
+    .hamburger__menu { 
+        position: absolute;
+        width: 300px;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+        background: #f3efea;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    
+    .hamburger__menu a {
+        font-size: 2em;
+    }
+    
+    .hamburger__icon input:checked ~ .hamburger__menu {
+        transform: none;
+    }
+    
+    .hamburger__link {
+        margin: 5vh 0;
+    }
+    
+    .masterclass-main {
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 58.25%, rgba(0, 0, 0, 0) 100%), url(../images/masterclass/masterclass_main_small.png);
+    }
+    .masterclass-main__title {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: left;
+    }
+    .masterclass-ourworks__gallery,
+    input[type="checkbox"]:checked ~ .masterclass-ourworks__hiddengallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .masterclass-ourworks__img {
+        height: 10rem;
+        width: 8.7rem;
+    }
+    .masterclass-techniques__list {
         display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: repeat(7, 120px);
-    row-gap: 1rem;
-    justify-items: start;
-    align-items: center;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: repeat(7, 120px);
+        row-gap: 1rem;
+        justify-items: start;
+        align-items: center;
     }
-.masterclass-techniques__item {
-    line-height: 2rem;
+    .masterclass-techniques__item {
+        line-height: 2rem;
     }
-.masterclass-techniques__marker {
-    float: none;
-    padding-top: 1rem;
-    margin-top:0;
-    margin-right: 0;
-    margin-left: 0;
+    .masterclass-techniques__marker {
+        float: none;
+        padding-top: 1rem;
+        margin-top:0;
+        margin-right: 0;
+        margin-left: 0;
     }
     .masterclass-secondlife {
         height: 27.75rem;
@@ -593,5 +618,5 @@ input[type="checkbox"]:checked ~ .masterclass-ourworks__hiddengallery {
     .masterclass-tutorial__img {
         padding-left: 0;
         padding-bottom: 2rem;
-        }
     }
+}
