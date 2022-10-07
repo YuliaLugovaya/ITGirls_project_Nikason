@@ -339,6 +339,7 @@ a {
     display: flex;
     justify-content: space-between;
     padding-top: 10vh;
+    line-height: 150%;
 }
 
 .footer__info {
